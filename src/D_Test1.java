@@ -5,7 +5,7 @@ import java.awt.event .*;
 public class D_Test1 {
 
         public static void main(String[] args) {
-            NewStudent st = new D_Test1();
+            D_Test1 st = new D_Test1();
         }
 
         public D_Test1() {
