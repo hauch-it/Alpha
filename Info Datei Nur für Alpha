@@ -1,0 +1,83 @@
+Java AWT | BorderLayout Class
+BorderLayout is the default layout for the window objects such as JFrame, JWindow, JDialog, JInternalFrame etc. BorderLayout arranges the components in the five regions. Four sides are referred to as north, south, east, and west. The middle part is called the center. Each region can contain only one component and is identified by a corresponding constant as NORTH, SOUTH, EAST, WEST, and CENTER.
+
+Constructors:
+
+BorderLayout(): It will construct a new borderlayout with no gaps between the components.
+BorderLayout(int, int): It will constructs a border layout with the specified gaps between the components.
+Commonly Used Methods:
+
+toString(): Returns a string which is representation of the state of border layout.
+getLayoutAlignmentX(Container parent): Returns the layout alignment along the X-axis.
+getLayoutAlignmentY(Container parent): It will returns the layout alignment along the Y-axis.
+removeLayoutComponent(Component comp): This method is used to remove the specified component from the borderlayout.
+getVgap(): Return the vertical gap between the components.
+getHgap(): Returns the Horizontal gap between the components.
+setHgap(int hgap): It is used to set the horizontal gap between the components.
+setVgap(int vgap): It is used to set the vertical gap between the components.
+Below Programs will illustrate the BorderLayout class:
+
+Program 1: The following program creates JButton components in a JFrame, whose instance class is “BorderLayoutDemo”. We create 5 JButton and then add them to the JFrame by using add() method. We will set the size and visibility of the frame by using setSize() and setVisible() method respectively. The layout is set by using the setLayout() method.
+filter_none
+brightness_4
+// Java program to illustrate the BorderLayout 
+import java.awt.*; 
+import java.awt.event.*; 
+import javax.swing.*; 
+  
+// class extends JFrame 
+class BoderLayoutDemo extends JFrame { 
+  
+    BoderLayoutDemo() 
+    { 
+          
+        // Creating Object of Jpanel class 
+        JPanel pa = new JPanel(); 
+  
+        // set the layout 
+        pa.setLayout(new BorderLayout()); 
+  
+        // add a new JButton with name "wel" and it is 
+        // lie top of the container 
+        pa.add(new JButton("WelCome"), BorderLayout.NORTH); 
+  
+        // add a new JButton with name "come" and it is 
+        // lie buttom of the container 
+        pa.add(new JButton("Geeks"), BorderLayout.SOUTH); 
+  
+        // add a new JButton with name "Layout" and it is 
+        // lie left of the container 
+        pa.add(new JButton("Layout"), BorderLayout.EAST); 
+  
+        // add a new JButton with name "Border" and it is 
+        // lie right of the container 
+        pa.add(new JButton("Border"), BorderLayout.WEST); 
+  
+        // add a new JButton with name "hello everybody" and it is 
+        // lie center of the container 
+        pa.add(new JButton("GeeksforGeeks"), BorderLayout.CENTER); 
+  
+        // add the pa object which refer to the Jpanel 
+        add(pa); 
+  
+        // Function to close the operation of JFrame. 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+  
+        // Function to set size of JFrame. 
+        setSize(300, 300); 
+  
+        // Function to set visible status of JFrame. 
+        setVisible(true); 
+    } 
+} 
+  
+class MainFrame { 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+          
+        // calling the constructor 
+        new BoderLayoutDemo(); 
+    } 
+} 
