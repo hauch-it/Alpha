@@ -26,7 +26,52 @@ public class Main {
 
         this.contantPane = new JPanel();
         this.fr.setContentPane(contantPane);
-        this.contantPane.add(new JLabel("Beispiel JLabel"));
+        this.contantPane.add(new JLabel("Ein Tool der CI!"));
+        this.contantPane.add(new JLabel("1) Tools von Daniel"));
+
+        ButtonGroup buttonGroup = new ButtonGroup();
+        JRadioButton hzeit = new JRadioButton("Hochzeit");
+        hzeit.setBounds(100, 170, 100, 20);
+        buttonGroup.add(hzeit);
+        this.contantPane.add(hzeit);
+        JRadioButton gtag = new JRadioButton("Geburtstag");
+        gtag.setBounds(250, 170, 100, 20);
+        buttonGroup.add(gtag);
+        this.contantPane.add(gtag);
+
+        JLabel auswahl = new JLabel("Ihre Auswahl:");
+        auswahl.setBounds(10, 200, 100, 20);
+        this.contantPane.add(auswahl);
+        final JTextField text1 = new JTextField();
+        text1.setBounds(100, 200, 300, 20);
+        this.contantPane.add(text1);
+
+        hzeit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                text1.setText("MALE");
+            }
+        });
+
+        gtag.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                text1.setText("FEMALE");
+            }
+        });
+
+
+
+        this.contantPane.add(new JLabel("2) Tools von Eugen"));
+
+
+
+
+
+
+
+
+        this.contantPane.add(new JLabel("3) Tools von Michael"));
+
+
         this.contantPane.setVisible(true);
         this.fr.setVisible(true);
     }
