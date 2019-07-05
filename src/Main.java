@@ -28,7 +28,7 @@ public class Main {
         contantPane.setVisible(true);
         fr.setVisible(true);
     }
-    
+
     public static void main(String[] args) {
         System.out.println("Hello World!");
         Main mn = new Main();
