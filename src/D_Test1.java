@@ -2,15 +2,13 @@ import java.awt .*;
 import javax.swing .*;
 import java.awt.event .*;
 
-public class D_Test {
+public class D_Test1 {
 
-
-    public class NewStudent {
         public static void main(String[] args) {
-            NewStudent st = new NewStudent();
+            NewStudent st = new D_Test1();
         }
 
-        public NewStudent() {
+        public D_Test1() {
             JFrame frame = new JFrame("STUDENT REGISTRATION FORM");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(800, 600);
@@ -49,5 +47,4 @@ public class D_Test {
                 }
             });
         }
-    }
 }
