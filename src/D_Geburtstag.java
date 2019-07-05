@@ -1,7 +1,7 @@
-public class Geburtstag {
+public class D_Geburtstag {
 
 
-    public Geburtstag(){
+    public D_Geburtstag(){
 
         Main mn1 = new Main();
 
@@ -11,7 +11,7 @@ public class Geburtstag {
 
     public static void main(String[] args) {
 
-        Geburtstag gb = new Geburtstag();
+        D_Geburtstag gb = new D_Geburtstag();
 
 
     }
