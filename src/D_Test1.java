@@ -6,9 +6,7 @@ public class D_Test {
 
 
     public class NewStudent {
-        public static void
-
-            (String[] args) {
+        public static void main(String[] args) {
             NewStudent st = new NewStudent();
         }
 
