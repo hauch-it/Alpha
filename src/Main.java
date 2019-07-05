@@ -35,6 +35,6 @@ public class Main {
         System.out.println("Hello World!");
 
         Main mn = new Main();
-
+        System.out.println("test");
     }
 }
