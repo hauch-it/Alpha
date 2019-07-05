@@ -7,6 +7,7 @@ public class Main {
     JFrame fr = null;
     JMenuBar jmb = null;
     JMenu jm = null;
+    JMenu jm1 = null;
     JPanel contantPane = null;
     JLabel label = null;
     JMenuItem jmI = null;
@@ -17,12 +18,13 @@ public class Main {
 
         this.jmb = new JMenuBar();
         this.fr.setJMenuBar(jmb);
-        this.jm = new JMenu("File");
+        this.jm = new JMenu("Menu");
         this.jmb.add(jm);
         this.jmI = new JMenuItem("Exit");
         this.jm.add(jmI);
         this.jmI.addActionListener(new ActionListener1());
-
+        this.jm1 = new JMenu("Info");
+        this.jmb.add(jm1);
 
         this.contantPane = new JPanel();
         
