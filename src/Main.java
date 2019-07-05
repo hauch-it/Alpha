@@ -7,6 +7,7 @@ public class Main {
     JMenuBar jmb = null;
     JMenu jm = null;
     JPanel contantPane = null;
+    JLabel label = null;
 
 //Konstruktor Gui
     public Main(){
@@ -22,19 +23,14 @@ public class Main {
         this.contantPane = new JPanel();
         fr.setContentPane(contantPane);
 
-
+        contantPane.add(new JLabel("Beispiel JLabel"));
+        // Wir lassen unseren Frame anzeigen
+        contantPane.setVisible(true);
         fr.setVisible(true);
     }
-
-
-
-
-
-
+    
     public static void main(String[] args) {
         System.out.println("Hello World!");
-
         Main mn = new Main();
-        System.out.println("test");
     }
 }
