@@ -27,8 +27,12 @@ public class Main {
         this.jmb.add(jm1);
 
         this.contantPane = new JPanel();
+        
         this.fr.setContentPane(contantPane);
+
+
         this.contantPane.add(new JLabel("Ein Tool der CI!"));
+        
         this.contantPane.add(new JLabel("1) Tools von Daniel"));
 
         ButtonGroup buttonGroup = new ButtonGroup();
