@@ -11,7 +11,7 @@ public class Main {
     JPanel contantPane = null;
     JLabel label = null;
     JMenuItem jmI = null;
-//Konstruktor Gui
+    //Konstruktor Gui
     public Main(){
         this.fr = new JFrame("Coutinius Integration");
         this.fr.setSize(666,900);
@@ -27,12 +27,12 @@ public class Main {
         this.jmb.add(jm1);
 
         this.contantPane = new JPanel();
-        
+
         this.fr.setContentPane(contantPane);
 
 
         this.contantPane.add(new JLabel("Ein Tool der CI!"));
-        
+
         this.contantPane.add(new JLabel("1) Tools von Daniel"));
 
         ButtonGroup buttonGroup = new ButtonGroup();
@@ -87,7 +87,7 @@ public class Main {
         Main mn = new Main();
 
     }
-// Action Listener
+    // Action Listener
     private class ActionListener1 implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
