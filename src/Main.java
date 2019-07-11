@@ -67,13 +67,13 @@ public class Main {
 
         ButtonGroup buttonGroup = new ButtonGroup();
 
-        JButton DTools = new JButton("Daniel");    DTools.setBounds(100, 100, 100, 20);
+        JButton DTools = new JButton("Daniel");    DTools.setBounds(100, 100, 100, 40);
         buttonGroup.add(DTools);    Panele.add(DTools);
         
-        JButton ETools = new JButton("Eugen"); ETools.setBounds(200, 200, 100, 20);
+        JButton ETools = new JButton("Eugen"); ETools.setBounds(200, 200, 100, 40);
         buttonGroup.add(ETools);  Panele.add(ETools);
 
-        JButton MTools = new JButton("Michael"); MTools.setBounds(300, 300, 100, 20);
+        JButton MTools = new JButton("Michael"); MTools.setBounds(300, 300, 100, 40);
         buttonGroup.add(MTools);  Panele.add(MTools);
 
         DTools.addActionListener(new ActionListener() {

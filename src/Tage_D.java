@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Random;
 
 public class Tage_D extends JFrame {
 
@@ -20,6 +20,8 @@ public class Tage_D extends JFrame {
     JTextField j2 = null;
     JTextField j3 = null;
     JTextField j4 = null;
+    JTextField j5 = null;
+    JTextField j6 = null;
 
 
     JMenuItem menuItem1 = null;
@@ -33,7 +35,7 @@ public class Tage_D extends JFrame {
     public Tage_D() {
 
         fr = new JFrame("Coutinius Integration SS 2019");
-        fr.setSize(600,800);
+        fr.setSize(500,500);
         fr.setFont(new Font("Helvetica", Font.PLAIN, 12));
         fr.setLayout(new FlowLayout());
 
@@ -81,47 +83,53 @@ public class Tage_D extends JFrame {
          */
 
         j1 = new JTextField("Tools von Daniel Hauch"); j1.setEditable(false);   j1.setSize(450,30); ;   Panele.add(j1);
-        j2 = new JTextField("Wie ist Ihr Name?");   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
-        j3 = new JTextField("");   j3.setEditable(true); Panele.add(j2); j3.setSize(450,30);   Panele.add(j3);
-
-        button1 = new JButton("Erfahren"); Panele.add(button1);
-
-        j4 = new JTextField("Sie sterben in ___ Jahren!"); Panele.add(j4);
-
+        j2 = new JTextField("Geben Sie hier jeweils nach Auswahl: Geburtsjahr, Hohchzeitsjahr, aktuelles Jahr ein!");   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
+        j3 = new JTextField("Bsp. 1966");   j3.setEditable(true); Panele.add(j2); j3.setSize(450,30);   Panele.add(j3);
+        j4 = new JTextField("Hier erfahren Sie Ergebnisse aus Ihrer Auswahl"); Panele.add(j4);
 
         ButtonGroup buttonGroup = new ButtonGroup();
-        JButton szeit= new JButton("Sterbezeitpunkt");
+        JButton szeit= new JButton("Sterbezeitpunkt Erfahren");
         szeit.setBounds(100, 170, 100, 20);
         buttonGroup.add(szeit); Panele.add(szeit);
-        JButton gtag = new JButton("zufällige Alter ausrechnen");
+
+        szeit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+
+                Random randomGenerator = new Random();
+                int randomInt = randomGenerator.nextInt(50) + 1;
+                int zahl =  Integer.parseInt(j3.getText());
+                int zufall = zahl + randomInt;
+
+               String resultat = new String("Sie werden im Jahr: "+zufall+" möglicherweise sterben!");
+
+                j4.setText(resultat);
+
+            }
+        });
+
+        JButton gtag = new JButton("zufälliges Alter ausrechnen");
         gtag.setBounds(250, 170, 100, 20);
         buttonGroup.add(gtag);  Panele.add(gtag);
 
-        JLabel auswahl = new JLabel("Ihre Auswahl:");
-        auswahl.setBounds(10, 200, 100, 20);
-        Panele.add(auswahl);
+        gtag.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+
+                Random randomGenerator = new Random();
+                int randomInt = randomGenerator.nextInt(50) + 1;
+                int zahl =  Integer.parseInt(j3.getText());
+                int zufall = zahl + randomInt;
+
+                String resultat = new String("Sie werden in "+zufall+" Jahren möglicherweise sterben!");
+
+                j4.setText(resultat);
+
+            }
+        });
+
         final JTextField text1 = new JTextField("");
         text1.setBounds(100, 200, 300, 20);
         Panele.add(text1);
 
-        szeit.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ie) {
-                text1.setText("MALE");
-            }
-        });
-
-        gtag.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ie) {
-                text1.setText("FEMALE");
-            }
-        });
-
-
-        gtag.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent ie) {
-                text1.setText("FEMALE");
-            }
-        });
 
         fr.setVisible(true);
         fr.setAlwaysOnTop(true);
