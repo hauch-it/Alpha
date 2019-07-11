@@ -1,7 +1,8 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 public class Quiz_Spiel extends JFrame {
     JLabel label_1;
     JTextArea textarea_1;
@@ -75,11 +76,11 @@ public class Quiz_Spiel extends JFrame {
         sp_textarea_2 = new JScrollPane(textarea_2);
         getContentPane().add(sp_textarea_2);
 
-        textarea_3 = new JTextArea("textarea_3");
+        textarea_3 = new JTextArea("Was ist JUnit?");
         sp_textarea_3 = new JScrollPane(textarea_3);
         getContentPane().add(sp_textarea_3);
 
-        textarea_4 = new JTextArea("textarea_4");
+        textarea_4 = new JTextArea("Was macht einen guten Test aus?");
         sp_textarea_4 = new JScrollPane(textarea_4);
         getContentPane().add(sp_textarea_4);
 
@@ -94,22 +95,25 @@ public class Quiz_Spiel extends JFrame {
         label_8 = new JLabel("A: Refactoring  B: Transformation   C: Clean Code");
         getContentPane().add(label_8);
 
-        label_9 = new JLabel("label_9");
+        label_9 = new JLabel("A: Sprache   B: Framework   C: Methode");
         getContentPane().add(label_9);
 
-        textfield_4 = new JTextField("textfield_4");
+        textfield_4 = new JTextField("");
         getContentPane().add(textfield_4);
 
         button_1 = new JButton("Prüfen");
         getContentPane().add(button_1);
+        button_1.addActionListener(new CloseListener2());
 
-        textfield_5 = new JTextField("textfield_5");
+
+        textfield_5 = new JTextField("");
         getContentPane().add(textfield_5);
 
         button_2 = new JButton("Prüfen");
         getContentPane().add(button_2);
+        button_2.addActionListener(new CloseListener());
 
-        label_10 = new JLabel("label_10");
+        label_10 = new JLabel("A: Maintainable  B:    C: ");
         getContentPane().add(label_10);
 
         textfield_7 = new JTextField("textfield_7");
@@ -149,6 +153,13 @@ public class Quiz_Spiel extends JFrame {
                 System.exit(0);
             }
         });
+
+
+
+
+
+
+
     }
 
     public static void main(String args[]) {
@@ -158,6 +169,56 @@ public class Quiz_Spiel extends JFrame {
         window.pack();
         window.show();
     }
+
+    class CloseListener2 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent a) {
+
+            if(textfield_4.getText().startsWith("C")  || textfield_4.getText().startsWith("c") ) {
+                System.out.println("ja");
+                textfield_4.setText("Richtig !  Gewinn 1000 Euro");
+                JOptionPane.showMessageDialog(null,
+                    "Herzlichen Glückwunsch , Sie sind nicht so dumm, wie ich dachte !",
+                    "Eine Nachricht",
+                    JOptionPane.WARNING_MESSAGE);
+
+
+            }else{
+                System.out.println("nein");
+                textfield_4.setText("Falsch geantwortet! ");
+            }
+
+
+
+        }
+
+    }
+
+    class CloseListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent a) {
+
+            if(textfield_5.getText().startsWith("B")  || textfield_5.getText().startsWith("b") ) {
+                System.out.println("ja");
+                textfield_5.setText("Richtig !  Gewinn 1000 Euro");
+                JOptionPane.showMessageDialog(null,
+                    "Wie viele Windows-Anwender braucht man, um eine Glühbirne zu wechseln? – 100. Einer schraubt und 99 klicken die Fehlermeldungen weg.",
+                    "Eine Nachricht",
+                    JOptionPane.WARNING_MESSAGE);
+
+
+            }else{
+                System.out.println("nein");
+                textfield_5.setText("Falsch geantwortet! ");
+            }
+
+
+
+        }
+
+    }
+
+
 }
 
 class Quiz_SpielLayout implements LayoutManager {
