@@ -98,37 +98,9 @@ public class Tage_D extends JFrame {
         this.fr.setVisible(true);
         this.fr.setAlwaysOnTop(true);
 
-        DerHandler handler = new DerHandler();
-        menuItem1.addActionListener(handler);
-        gtag.addActionListener(handler);
-        hzeit.addActionListener(handler);
 
     }
 
-// Action Listener
-    private class DerHandler implements ActionListener {
-    @Override
-    public void actionPerformed(ActionEvent event) {
-
-        String string = "";
-/*
-            if(event.getSource()=hzeit)
-                string=String.format("Name: %s", event.getActionCommand());
-
-            else if(event.getSource()==gtag)
-                string=String.format("passwortFeld2: %s", event.getActionCommand());
-
-            JOptionPane.showMessageDialog(null, string);
-        }
-
-
-
-
-    }
-
-    */
-    }
-}
     public static void main(String[] args) {
 
         Tage_D gb = new Tage_D();
