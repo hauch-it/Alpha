@@ -1,6 +1,8 @@
 import java.awt.BorderLayout;
+import java.awt.Color;
 import javax.swing.*;
-
+import java.awt.*;
+import java.awt.event.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.util.Random;
@@ -25,6 +27,8 @@ public class Quiz extends JFrame {
     JLabel frage1antworten1 = null;
   JLabel frage2 = null;
   JLabel frage1antworten2 = null;
+
+  JLabel html1 = null;
     JMenuItem menuItem1 = null;
     JMenuItem menuItem2 = null;
 
@@ -38,7 +42,6 @@ public class Quiz extends JFrame {
 
       this.fr = new JFrame("GUI");
       this.fr.setSize(430, 630);
-
 
       this.contentPane = new JPanel();
       this.fr.setContentPane(this.contentPane);
@@ -60,10 +63,18 @@ public class Quiz extends JFrame {
 
       this.menuItem2.addActionListener(new CloseListener3());
 
-      this.label1 = new JLabel("Herzlich willkommen zu unserem Quiz!");
+      this.label1 = new JLabel("Herzlich Willkommen zu unserem Quiz!");
       this.contentPane.add(label1);
 
+
+
+
+      this.label1.setForeground(Color.BLUE );
+
+
+
       this.label2 = new JLabel("Beantworten Sie uns 5 kurze Fragen und gewinnen Sie 10000 Euro!");
+      ;
       this.contentPane.add(label2);
 
 
@@ -89,6 +100,7 @@ public class Quiz extends JFrame {
       this.button1 = new JButton("Prüfen");
       this.contentPane.add(button1);
       this.button1.addActionListener(new CloseListener2());
+
 
       this.fr.setVisible(true);
 
