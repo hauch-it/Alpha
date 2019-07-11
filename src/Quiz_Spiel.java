@@ -80,15 +80,15 @@ public class Quiz_Spiel extends JFrame {
         sp_textarea_3 = new JScrollPane(textarea_3);
         getContentPane().add(sp_textarea_3);
 
-        textarea_4 = new JTextArea("Was macht einen guten Test aus?");
+        textarea_4 = new JTextArea("Was macht  git status?");
         sp_textarea_4 = new JScrollPane(textarea_4);
         getContentPane().add(sp_textarea_4);
 
-        textarea_5 = new JTextArea("textarea_5");
+        textarea_5 = new JTextArea("Welche Programmiersprache existiert nicht?");
         sp_textarea_5 = new JScrollPane(textarea_5);
         getContentPane().add(sp_textarea_5);
 
-        textarea_6 = new JTextArea("textarea_6");
+        textarea_6 = new JTextArea("Wie wird ein infizierter Programmcode bezeichnet?");
         sp_textarea_6 = new JScrollPane(textarea_6);
         getContentPane().add(sp_textarea_6);
 
@@ -113,37 +113,40 @@ public class Quiz_Spiel extends JFrame {
         getContentPane().add(button_2);
         button_2.addActionListener(new CloseListener());
 
-        label_10 = new JLabel("A: Maintainable  B:    C: ");
+        label_10 = new JLabel("A: Senden  B: Speichern  C: Änderungen anzeigen ");
         getContentPane().add(label_10);
 
-        textfield_7 = new JTextField("textfield_7");
+        textfield_7 = new JTextField("");
         getContentPane().add(textfield_7);
 
         button_3 = new JButton("Prüfen");
         getContentPane().add(button_3);
+        button_3.addActionListener(new CloseListener1());
 
-        label_11 = new JLabel("label_11");
+        label_11 = new JLabel("A: C**        B: C++       C: C# ");
         getContentPane().add(label_11);
 
-        label_12 = new JLabel("label_12");
+        label_12 = new JLabel("A: Zecke      B: Schlange      C: Wurm");
         getContentPane().add(label_12);
 
-        textfield_8 = new JTextField("textfield_8");
+        textfield_8 = new JTextField("");
         getContentPane().add(textfield_8);
 
-        textfield_9 = new JTextField("textfield_9");
+        textfield_9 = new JTextField("");              //Hier
         getContentPane().add(textfield_9);
 
         button_4 = new JButton("Prüfen");
         getContentPane().add(button_4);
+        button_4.addActionListener(new CloseListener3());
 
         button_5 = new JButton("Prüfen");
         getContentPane().add(button_5);
+        button_5.addActionListener(new CloseListener4());
 
         textfield_10 = new JTextField("textfield_10");
         getContentPane().add(textfield_10);
 
-        label_13 = new JLabel("label_13");
+        label_13 = new JLabel("Gewinn:");
         getContentPane().add(label_13);
 
         setSize(getPreferredSize());
@@ -193,6 +196,79 @@ public class Quiz_Spiel extends JFrame {
         }
 
     }
+
+    class CloseListener4 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent a) {
+
+            if(textfield_9.getText().startsWith("C")  || textfield_9.getText().startsWith("c") ) {
+                System.out.println("ja");
+                textfield_9.setText("Richtig !  Gewinn 1000 Euro");
+                JOptionPane.showMessageDialog(null,
+                    "Herzlichen Glückwunsch, Sie haben 10000 Euro gewonnen!",
+                    "Eine Nachricht",
+                    JOptionPane.WARNING_MESSAGE);
+
+
+            }else{
+                System.out.println("nein");
+                textfield_9.setText("Falsch geantwortet! ");
+            }
+
+
+
+        }
+
+    }
+
+    class CloseListener3 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent a) {
+
+            if(textfield_8.getText().startsWith("A")  || textfield_8.getText().startsWith("a") ) {
+                System.out.println("ja");
+                textfield_8.setText("Richtig !  Gewinn 1000 Euro");
+                JOptionPane.showMessageDialog(null,
+                    "Gut gemacht, Egal wie leer du bist - es gibt Menschen die sind Lehrer!",
+                    "Eine Nachricht",
+                    JOptionPane.WARNING_MESSAGE);
+
+
+            }else{
+                System.out.println("nein");
+                textfield_8.setText("Falsch geantwortet! ");
+            }
+
+
+
+        }
+
+    }
+
+    class CloseListener1 implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent a) {
+
+            if(textfield_7.getText().startsWith("C")  || textfield_7.getText().startsWith("c") ) {
+                System.out.println("ja");
+                textfield_7.setText("Richtig !  Gewinn 1000 Euro");
+                JOptionPane.showMessageDialog(null,
+                    "HA, gut geraten! Wo ist der beste Ort um eine Leiche zu verstecken? Seite 2 auf Google ",
+                    "Eine Nachricht",
+                    JOptionPane.WARNING_MESSAGE);
+
+
+            }else{
+                System.out.println("nein");
+                textfield_7.setText("Falsch geantwortet! ");
+            }
+
+
+
+        }
+
+    }
+
 
     class CloseListener implements ActionListener{
         @Override
