@@ -1,6 +1,6 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
 public class Main {
     //Variablen GUI
 
@@ -11,90 +11,105 @@ public class Main {
     JPanel contantPane = null;
     JLabel label = null;
     JMenuItem jmI = null;
+    JComboBox combobox_1;
     //Konstruktor Gui
     public Main(){
-        this.fr = new JFrame("Coutinius Integration");
-        this.fr.setSize(666,900);
+        fr = new JFrame("Coutinius Integration SS 2019");
+        fr.setSize(600,900);
+        fr.setFont(new Font("Helvetica", Font.PLAIN, 12));
 
-        this.jmb = new JMenuBar();
-        this.fr.setJMenuBar(jmb);
-        this.jm = new JMenu("Menu");
-        this.jmb.add(jm);
-        this.jmI = new JMenuItem("Exit");
-        this.jm.add(jmI);
-        this.jmI.addActionListener(new ActionListener1());
-        this.jm1 = new JMenu("Info");
-        this.jmb.add(jm1);
+        jmb = new JMenuBar();
+        fr.setJMenuBar(jmb);
+        jm = new JMenu("Menu");
+        jmb.add(jm);
+        jmI = new JMenuItem("Exit");
+        jm.add(jmI);
+        jmI.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
 
-        this.contantPane = new JPanel();
+                System.exit(-1);
+            }
+        });
+        jm1 = new JMenu("Info");
+        jmb.add(jm1);
 
-        this.fr.setContentPane(contantPane);
+        contantPane = new JPanel();
 
+        fr.setContentPane(contantPane);
 
-        this.contantPane.add(new JLabel("Ein Tool der CI!"));
+        contantPane.add(new JLabel("Ein Tool der CI!"));
 
-        this.contantPane.add(new JLabel("1) Tools von Daniel"));
+        contantPane.add(new JLabel("Tools von Daniel, Eugen, Michael"));
 
         ButtonGroup buttonGroup = new ButtonGroup();
-        JRadioButton hzeit = new JRadioButton("Hochzeit");
-        hzeit.setBounds(100, 170, 100, 20);
-        buttonGroup.add(hzeit);
-        this.contantPane.add(hzeit);
-        JRadioButton gtag = new JRadioButton("Geburtstag");
-        gtag.setBounds(250, 170, 100, 20);
-        buttonGroup.add(gtag);
-        this.contantPane.add(gtag);
+
+        fr.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
+
+        combobox_1 = new JComboBox();
+        combobox_1.addItem("Daniels Tools");
+        combobox_1.addItem("Eugen Tools");
+        combobox_1.addItem("Michaels Tools");
+        fr.add(combobox_1);
+
+
+        JRadioButton DTools = new JRadioButton("Daniels Tools");    DTools.setBounds(100, 100, 100, 20);
+        buttonGroup.add(DTools);    contantPane.add(DTools);
+        
+        JRadioButton ETools = new JRadioButton("Eugen Tools"); ETools.setBounds(200, 100, 100, 20);
+        buttonGroup.add(ETools);  contantPane.add(ETools);
+
+        JRadioButton MTools = new JRadioButton("Eugen Tools"); MTools.setBounds(300, 100, 100, 20);
+        buttonGroup.add(MTools);  contantPane.add(MTools);
 
         JLabel auswahl = new JLabel("Ihre Auswahl:");
         auswahl.setBounds(10, 200, 100, 20);
-        this.contantPane.add(auswahl);
-        final JTextField text1 = new JTextField();
+        contantPane.add(auswahl);
+        final JTextField text1 = new JTextField("..Bisher keine Auswahl!..");
         text1.setBounds(100, 200, 300, 20);
-        this.contantPane.add(text1);
+        contantPane.add(text1);
 
-        hzeit.addActionListener(new ActionListener() {
+        DTools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
-                text1.setText("MALE");
+                text1.setText("Daniel Tools");
+
+            }
+        });
+        ETools.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                text1.setText("Eugens Tools");
+
+
             }
         });
 
-        gtag.addActionListener(new ActionListener() {
+        MTools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
-                text1.setText("FEMALE");
+                text1.setText("Michaels Tools");
+
             }
         });
 
 
-
-        this.contantPane.add(new JLabel("2) Tools von Eugen"));
-
-
-
-
-
-
-
-
-        this.contantPane.add(new JLabel("3) Tools von Michael"));
-
-
-        this.contantPane.setVisible(true);
-        this.fr.setVisible(true);
+        contantPane.setVisible(true);
+        fr.setVisible(true);
+        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
         Main mn = new Main();
 
-    }
-    // Action Listener
-    private class ActionListener1 implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-            System.exit(0);
-        }
     }
 
 
 }
+
+
+
+
+
+
+
