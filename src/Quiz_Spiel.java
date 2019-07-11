@@ -46,32 +46,32 @@ public class Quiz_Spiel extends JFrame {
         getContentPane().setFont(new Font("Helvetica", Font.PLAIN, 12));
         getContentPane().setLayout(customLayout);
 
-        label_1 = new JLabel("label_1");
+        label_1 = new JLabel("Herzlich Willkommen zu unserem Quiz!");
         getContentPane().add(label_1);
 
-        textarea_1 = new JTextArea("textarea_1");
+        textarea_1 = new JTextArea("Beantworten Sie uns 5 kurze Fragen und gewinnen Sie 10000 Euro!");
         sp_textarea_1 = new JScrollPane(textarea_1);
         getContentPane().add(sp_textarea_1);
 
-        label_2 = new JLabel("label_2");
+        label_2 = new JLabel("Frage 1:");
         getContentPane().add(label_2);
 
-        label_3 = new JLabel("label_3");
+        label_3 = new JLabel("Komlovski Eugen");
         getContentPane().add(label_3);
 
-        label_4 = new JLabel("label_4");
+        label_4 = new JLabel("Frage 5:");
         getContentPane().add(label_4);
 
-        label_5 = new JLabel("label_5");
+        label_5 = new JLabel("Frage 4:");
         getContentPane().add(label_5);
 
-        label_6 = new JLabel("label_6");
+        label_6 = new JLabel("Frage 3:");
         getContentPane().add(label_6);
 
-        label_7 = new JLabel("label_7");
+        label_7 = new JLabel("Frage 2:");
         getContentPane().add(label_7);
 
-        textarea_2 = new JTextArea("textarea_2");
+        textarea_2 = new JTextArea("Was gehört nicht zum Test Driven Developement?");
         sp_textarea_2 = new JScrollPane(textarea_2);
         getContentPane().add(sp_textarea_2);
 
@@ -91,7 +91,7 @@ public class Quiz_Spiel extends JFrame {
         sp_textarea_6 = new JScrollPane(textarea_6);
         getContentPane().add(sp_textarea_6);
 
-        label_8 = new JLabel("label_8");
+        label_8 = new JLabel("A: Refactoring  B: Transformation   C: Clean Code");
         getContentPane().add(label_8);
 
         label_9 = new JLabel("label_9");
@@ -100,13 +100,13 @@ public class Quiz_Spiel extends JFrame {
         textfield_4 = new JTextField("textfield_4");
         getContentPane().add(textfield_4);
 
-        button_1 = new JButton("button_1");
+        button_1 = new JButton("Prüfen");
         getContentPane().add(button_1);
 
         textfield_5 = new JTextField("textfield_5");
         getContentPane().add(textfield_5);
 
-        button_2 = new JButton("button_2");
+        button_2 = new JButton("Prüfen");
         getContentPane().add(button_2);
 
         label_10 = new JLabel("label_10");
@@ -115,7 +115,7 @@ public class Quiz_Spiel extends JFrame {
         textfield_7 = new JTextField("textfield_7");
         getContentPane().add(textfield_7);
 
-        button_3 = new JButton("button_3");
+        button_3 = new JButton("Prüfen");
         getContentPane().add(button_3);
 
         label_11 = new JLabel("label_11");
@@ -130,10 +130,10 @@ public class Quiz_Spiel extends JFrame {
         textfield_9 = new JTextField("textfield_9");
         getContentPane().add(textfield_9);
 
-        button_4 = new JButton("button_4");
+        button_4 = new JButton("Prüfen");
         getContentPane().add(button_4);
 
-        button_5 = new JButton("button_5");
+        button_5 = new JButton("Prüfen");
         getContentPane().add(button_5);
 
         textfield_10 = new JTextField("textfield_10");

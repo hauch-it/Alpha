@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dc023d-0769-466f-850a-8e3eed9fe5fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JunitTest/JunitTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D_Test2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/D_Test3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainGUI.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainGUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tage_D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tage_D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Quiz_Spiel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Quiz_Spiel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,16 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Quiz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1181#1313#0" expanded="true" />
-                <element signature="e#1312#1313#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="86" column="90" lean-forward="true" selection-start-line="86" selection-start-column="90" selection-end-line="86" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Quiz_Spiel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -75,6 +74,8 @@
         <option value="$PROJECT_DIR$/src/Tage_DTest.java" />
         <option value="$PROJECT_DIR$/src/Tage_D.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Quiz.java" />
+        <option value="$PROJECT_DIR$/src/Quiz_Spiel.java" />
       </list>
     </option>
   </component>
@@ -107,6 +108,12 @@
               <item name="Alpha" type="b2602c69:ProjectViewProjectNode" />
               <item name="Alpha" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Alpha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Alpha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Quiz_Spiel.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -149,14 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="D_Geburtstag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="D_Geburtstag" />
-      <module name="Alpha" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Quiz_Spiel">
     <configuration name="D_Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="D_Test1" />
       <module name="Alpha" />
@@ -171,6 +171,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Quiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Quiz" />
+      <module name="Alpha" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Quiz_Spiel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Quiz_Spiel" />
+      <module name="Alpha" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tage_D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tage_D" />
       <module name="Alpha" />
@@ -178,20 +192,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="Alpha" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Quiz_Spiel" />
+        <item itemvalue="Application.Quiz" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Tage_D" />
         <item itemvalue="Application.D_Test1" />
-        <item itemvalue="Application.D_Geburtstag" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +223,7 @@
       <workItem from="1562781684319" duration="923000" />
       <workItem from="1562789348995" duration="2654000" />
       <workItem from="1562848572975" duration="3638000" />
+      <workItem from="1562855527862" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="neue master">
       <created>1562341097724</created>
@@ -333,23 +341,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19764000" />
+    <option name="totallyTimeSpent" value="20491000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.113753214" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="0" visible="true" weight="0.32802126" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32802126" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3306773" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.33026114" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39978564" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -384,6 +392,20 @@
     <MESSAGE value="Junit für Tage_D erzeugt" />
     <option name="LAST_COMMIT_MESSAGE" value="Junit für Tage_D erzeugt" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Quiz.java</url>
+          <line>108</line>
+          <properties class="Quiz" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/testJFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/fenster.java" />
@@ -408,26 +430,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/D_Geburtstag.java" />
     <entry file="file://$PROJECT_DIR$/src/Quiz_E.java" />
-    <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/D_Test2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/D_Test3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="1" lean-forward="true" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/MainGUI.form" />
+    <entry file="file://$PROJECT_DIR$/src/D_Test2.java" />
+    <entry file="file://$PROJECT_DIR$/src/D_Test3.java" />
     <entry file="file://$PROJECT_DIR$/src/Tage_D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -452,13 +458,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        <state relative-caret-position="185">
+          <caret line="53" selection-start-line="53" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1181#1313#0" expanded="true" />
-            <element signature="e#1312#1313#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="86" column="90" lean-forward="true" selection-start-line="86" selection-start-column="90" selection-end-line="86" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Quiz_Spiel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="93" column="31" lean-forward="true" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
         </state>
       </provider>
     </entry>

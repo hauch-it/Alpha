@@ -84,7 +84,7 @@ public class Quiz extends JFrame {
 
       this.contentPane.add(frage1);
 
-      this.frage1antworten1 = new JLabel("A : Refactoring  B : Transformation   C : Clean Code  D : Neuer Test ");
+      this.frage1antworten1 = new JLabel("A: Refactoring  B: Transformation  C: Clean Code");
       this.contentPane.add(frage1antworten1);
 
       this.label3 = new JLabel("Antwort:");
