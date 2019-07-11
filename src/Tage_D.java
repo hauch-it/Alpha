@@ -3,58 +3,76 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Tage_D extends JFrame {
 
     JFrame fr = null;
     JPanel Panele = null;
     JButton button1 = null;
-    JLabel label1 = null;
-    JLabel label2 = null;
-    JLabel label3 = null;
-    JLabel label4 = null;
-    JLabel label5 = null;
-    JLabel label6 = null;
-    JLabel label7 = null;
-    JLabel label8 = null;
-    JLabel label9 = null;
-    JLabel labe20 = null;
     JTextField j1 = null;
     JTextField j2 = null;
     JTextField j3 = null;
     JTextField j4 = null;
-    JTextField j5 = null;
+
 
     JMenuItem menuItem1 = null;
     JMenuItem menuItem2 = null;
-    JOptionPane opane = null;
     JMenuBar bar =null;
     JMenu mF= null;
     JMenu mH = null;
+    JMenu mI = null;
 
-    int button1warsovielmalgedrückt = 0;
 
     public Tage_D() {
 
-        fr = new JFrame("GUI");
-        fr.setSize(350, 700);
+        fr = new JFrame("Coutinius Integration SS 2019");
+        fr.setSize(600,800);
+        fr.setFont(new Font("Helvetica", Font.PLAIN, 12));
         fr.setLayout(new FlowLayout());
 
         Panele = new JPanel();
+
         fr.setContentPane(Panele);
 
         bar = new JMenuBar();
         fr.setJMenuBar(bar);
         mF = new JMenu("File");
         mH = new JMenu("Help");
+        mI = new JMenu("Info");
         bar.add(mF);
         bar.add(mH);
+        bar.add(mI);
 
         menuItem1  = new JMenuItem("Exit");    mF.add(menuItem1);
-        menuItem2 = new JMenuItem("Info"); mH.add(menuItem2);
+        menuItem2  = new JMenuItem("Über");    mI.add(menuItem2);
 
-        j1 = new JTextField("Ein Tool der CI"); j1.setEditable(false);   j1.setSize(450,30); ;   Panele.add(j1);
-        j2 = new JTextField("Tools von Daniel Hauch");   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
-        j3 = new JTextField("Wie ist Ihr Name?");   j3.setEditable(true); Panele.add(j2); j3.setSize(450,30);   Panele.add(j3);
+
+        menuItem2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                try {
+                    JOptionPane.showMessageDialog(fr, "Tools entwickelt für CI 2019 Copyright by DEM Consulting");
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler");
+                }
+
+            }
+        });
+
+        this.fr.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                System.exit(-1);
+            }
+        });
+
+        fr.setContentPane(Panele);
+
+        j1 = new JTextField("Tools von Daniel Hauch"); j1.setEditable(false);   j1.setSize(450,30); ;   Panele.add(j1);
+        j2 = new JTextField("Wie ist Ihr Name?");   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
+        j3 = new JTextField("");   j3.setEditable(true); Panele.add(j2); j3.setSize(450,30);   Panele.add(j3);
 
         button1 = new JButton("Erfahren"); Panele.add(button1);
 
@@ -62,21 +80,21 @@ public class Tage_D extends JFrame {
 
 
         ButtonGroup buttonGroup = new ButtonGroup();
-        JRadioButton hzeit = new JRadioButton("Hochzeit");
-        hzeit.setBounds(100, 170, 100, 20);
-        buttonGroup.add(hzeit); this.Panele.add(hzeit);
-        JRadioButton gtag = new JRadioButton("Geburtstag");
+        JButton szeit= new JButton("Sterbezeitpunkt");
+        szeit.setBounds(100, 170, 100, 20);
+        buttonGroup.add(szeit); Panele.add(szeit);
+        JButton gtag = new JButton("zufällige Alter ausrechnen");
         gtag.setBounds(250, 170, 100, 20);
-        buttonGroup.add(gtag);  this.Panele.add(gtag);
+        buttonGroup.add(gtag);  Panele.add(gtag);
 
         JLabel auswahl = new JLabel("Ihre Auswahl:");
         auswahl.setBounds(10, 200, 100, 20);
-        this.Panele.add(auswahl);
-        final JTextField text1 = new JTextField();
+        Panele.add(auswahl);
+        final JTextField text1 = new JTextField("");
         text1.setBounds(100, 200, 300, 20);
-        this.Panele.add(text1);
+        Panele.add(text1);
 
-        hzeit.addActionListener(new ActionListener() {
+        szeit.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 text1.setText("MALE");
             }
@@ -95,17 +113,12 @@ public class Tage_D extends JFrame {
             }
         });
 
-        this.fr.setVisible(true);
-        this.fr.setAlwaysOnTop(true);
-
-
-    }
-
-    public static void main(String[] args) {
-
-        Tage_D gb = new Tage_D();
+        fr.setVisible(true);
+        fr.setAlwaysOnTop(true);
+        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
     }
 }
+
 

@@ -4,99 +4,130 @@ import java.awt.event.*;
 public class Main {
     //Variablen GUI
 
+    JButton button = null;
+    ImageIcon icon = null;
+
     JFrame fr = null;
-    JMenuBar jmb = null;
-    JMenu jm = null;
-    JMenu jm1 = null;
-    JPanel contantPane = null;
-    JLabel label = null;
-    JMenuItem jmI = null;
-    JComboBox combobox_1;
+    JPanel Panele = null;
+
+    JMenuItem menuItem1 = null;
+    JMenuItem menuItem2 = null;
+    JMenuBar bar =null;
+    JMenu mF= null;
+    JMenu mH = null;
+    JMenu mI = null;
+    
     //Konstruktor Gui
     public Main(){
+
         fr = new JFrame("Coutinius Integration SS 2019");
-        fr.setSize(600,900);
+        fr.setSize(600,800);
         fr.setFont(new Font("Helvetica", Font.PLAIN, 12));
+        fr.setLayout(new FlowLayout());
 
-        jmb = new JMenuBar();
-        fr.setJMenuBar(jmb);
-        jm = new JMenu("Menu");
-        jmb.add(jm);
-        jmI = new JMenuItem("Exit");
-        jm.add(jmI);
-        jmI.addActionListener(new ActionListener() {
+        Panele = new JPanel();
+
+        fr.setContentPane(Panele);
+
+        bar = new JMenuBar();
+        fr.setJMenuBar(bar);
+        mF = new JMenu("File");
+        mH = new JMenu("Help");
+        mI = new JMenu("Info");
+        bar.add(mF);
+        bar.add(mH);
+        bar.add(mI);
+
+        menuItem1  = new JMenuItem("Exit");    mF.add(menuItem1);
+        menuItem2  = new JMenuItem("Über");    mI.add(menuItem2);
+
+
+        menuItem2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
+                try {
+                    JOptionPane.showMessageDialog(fr, "Tools entwickelt für CI 2019 Copyright by DEM Consulting");
 
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler");
+                }
+
+            }
+        });
+
+        this.fr.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
                 System.exit(-1);
             }
         });
-        jm1 = new JMenu("Info");
-        jmb.add(jm1);
 
-        contantPane = new JPanel();
+        fr.setContentPane(Panele);
 
-        fr.setContentPane(contantPane);
-
-        contantPane.add(new JLabel("Ein Tool der CI!"));
-
-        contantPane.add(new JLabel("Tools von Daniel, Eugen, Michael"));
+        Panele.add(new JLabel("CI Tools von "));
 
         ButtonGroup buttonGroup = new ButtonGroup();
 
-        fr.addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
-
-        combobox_1 = new JComboBox();
-        combobox_1.addItem("Daniels Tools");
-        combobox_1.addItem("Eugen Tools");
-        combobox_1.addItem("Michaels Tools");
-        fr.add(combobox_1);
-
-
-        JRadioButton DTools = new JRadioButton("Daniels Tools");    DTools.setBounds(100, 100, 100, 20);
-        buttonGroup.add(DTools);    contantPane.add(DTools);
+        JButton DTools = new JButton("Daniel");    DTools.setBounds(100, 100, 100, 20);
+        buttonGroup.add(DTools);    Panele.add(DTools);
         
-        JRadioButton ETools = new JRadioButton("Eugen Tools"); ETools.setBounds(200, 100, 100, 20);
-        buttonGroup.add(ETools);  contantPane.add(ETools);
+        JButton ETools = new JButton("Eugen"); ETools.setBounds(200, 200, 100, 20);
+        buttonGroup.add(ETools);  Panele.add(ETools);
 
-        JRadioButton MTools = new JRadioButton("Eugen Tools"); MTools.setBounds(300, 100, 100, 20);
-        buttonGroup.add(MTools);  contantPane.add(MTools);
+        JButton MTools = new JButton("Michael"); MTools.setBounds(300, 300, 100, 20);
+        buttonGroup.add(MTools);  Panele.add(MTools);
 
-        JLabel auswahl = new JLabel("Ihre Auswahl:");
-        auswahl.setBounds(10, 200, 100, 20);
-        contantPane.add(auswahl);
-        final JTextField text1 = new JTextField("..Bisher keine Auswahl!..");
-        text1.setBounds(100, 200, 300, 20);
-        contantPane.add(text1);
 
         DTools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
-                text1.setText("Daniel Tools");
+                try {
+
+                    JOptionPane.showMessageDialog(fr, "Aufruf von Daniels Tools");
+                    fr.setVisible(false);
+                    Tage_D gb = new Tage_D();
+
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Daniels Tools");
+                }
 
             }
         });
+
         ETools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
-                text1.setText("Eugens Tools");
+                try {
 
+                    JOptionPane.showMessageDialog(fr, "Aufruf von Eugens Tools");
+                    //fr.setVisible(false);
+                    Quiz q = new Quiz();
+
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Eugens Tools");
+                }
 
             }
         });
 
         MTools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
-                text1.setText("Michaels Tools");
+                try {
+
+                    JOptionPane.showMessageDialog(fr, "Aufruf von Michaels Tools");
+                    fr.setVisible(false);
+                    Quiz q = new Quiz();
+
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Michaels Tools");
+                }
 
             }
         });
 
-
-        contantPane.setVisible(true);
-        fr.setVisible(true);
-        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Panele.setVisible(true);
+        this.fr.setVisible(true);
+        this.fr.setAlwaysOnTop(true);
+        this.fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
@@ -104,12 +135,4 @@ public class Main {
 
     }
 
-
 }
-
-
-
-
-
-
-
