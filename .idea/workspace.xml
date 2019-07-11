@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41dc023d-0769-466f-850a-8e3eed9fe5fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/D_Test2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/D_Test3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main$ActionListener1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Tage_D$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Tage_D$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Tage_D$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Tage_D$DerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Tage_D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tage_DTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JunitTest/src/Tage_DTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,18 +23,9 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainGUI.form">
           <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tage_D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -55,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
@@ -83,6 +63,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/MainGUI.form" />
         <option value="$PROJECT_DIR$/src/Tage_D.java" />
+        <option value="$PROJECT_DIR$/src/Tage_DTest.java" />
       </list>
     </option>
   </component>
@@ -111,13 +92,12 @@
             <path>
               <item name="Alpha" type="b2602c69:ProjectViewProjectNode" />
               <item name="Alpha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JunitTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Alpha" type="b2602c69:ProjectViewProjectNode" />
               <item name="Alpha" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MainGUI" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
@@ -132,10 +112,18 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -214,7 +202,7 @@
       <workItem from="1562534024971" duration="213000" />
       <workItem from="1562718828390" duration="103000" />
       <workItem from="1562781684319" duration="923000" />
-      <workItem from="1562789348995" duration="2380000" />
+      <workItem from="1562789348995" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="neue master">
       <created>1562341097724</created>
@@ -314,16 +302,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562717535565</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Junit für Tage_D erzeugt">
+      <created>1562804519991</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562804519991</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15852000" />
+    <option name="totallyTimeSpent" value="16104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0826226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11247335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,7 +361,8 @@
     <MESSAGE value="Fenster wird um Auswahl Fenster erweitert" />
     <MESSAGE value="neue Tage Script" />
     <MESSAGE value="neue GUI erstellt zum testen" />
-    <option name="LAST_COMMIT_MESSAGE" value="neue GUI erstellt zum testen" />
+    <MESSAGE value="Junit für Tage_D erzeugt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit für Tage_D erzeugt" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/testJFrame.java" />
@@ -414,15 +411,22 @@
     <entry file="file://$PROJECT_DIR$/src/MainGUI.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
+    <entry file="file://$PROJECT_DIR$/JunitTest/src/Tage_DTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tage_D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
