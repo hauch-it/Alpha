@@ -21,7 +21,7 @@ public class Main {
     public Main(){
 
         fr = new JFrame("Coutinius Integration SS 2019");
-        fr.setSize(600,800);
+        fr.setSize(400,400);
         fr.setFont(new Font("Helvetica", Font.PLAIN, 12));
         fr.setLayout(new FlowLayout());
 
@@ -40,7 +40,6 @@ public class Main {
 
         menuItem1  = new JMenuItem("Exit");    mF.add(menuItem1);
         menuItem2  = new JMenuItem("Über");    mI.add(menuItem2);
-
 
         menuItem2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
@@ -62,6 +61,8 @@ public class Main {
 
         fr.setContentPane(Panele);
 
+
+
         Panele.add(new JLabel("CI Tools von "));
 
         ButtonGroup buttonGroup = new ButtonGroup();
@@ -74,7 +75,6 @@ public class Main {
 
         JButton MTools = new JButton("Michael"); MTools.setBounds(300, 300, 100, 20);
         buttonGroup.add(MTools);  Panele.add(MTools);
-
 
         DTools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
@@ -98,7 +98,12 @@ public class Main {
 
                     JOptionPane.showMessageDialog(fr, "Aufruf von Eugens Tools");
                     //fr.setVisible(false);
-                    Quiz q = new Quiz();
+
+                    Quiz_Spiel window = new Quiz_Spiel();
+
+                    window.setTitle("Quiz_Spiel");
+                    window.pack();
+                    window.show();
 
 
                 }catch (Exception ex) {
@@ -114,7 +119,7 @@ public class Main {
 
                     JOptionPane.showMessageDialog(fr, "Aufruf von Michaels Tools");
                     fr.setVisible(false);
-                    Quiz q = new Quiz();
+                    Quiz qwqqq = new Quiz();
 
 
                 }catch (Exception ex) {

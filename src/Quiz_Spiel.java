@@ -154,12 +154,6 @@ public class Quiz_Spiel extends JFrame {
             }
         });
 
-
-
-
-
-
-
     }
 
     public static void main(String args[]) {

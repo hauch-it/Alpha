@@ -9,6 +9,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Tage_D extends JFrame {
 
+    Icon icon1,icon2,icon3;
+
+    JLabel bild1,bild2,bild3;
+
     JFrame fr = null;
     JPanel Panele = null;
     JButton button1 = null;
@@ -69,6 +73,12 @@ public class Tage_D extends JFrame {
         });
 
         fr.setContentPane(Panele);
+
+        /*
+        icon1 = new ImageIcon(getClass().getResource("bild1.jpg")); bild1 = new JLabel(icon1); fr.add(icon1);
+        icon2 = new ImageIcon(getClass().getResource("bild2.jpg")); bild2 = new JLabel(icon2); fr.add(icon2);
+        icon3 = new ImageIcon(getClass().getResource("bild3.gif")); bild3 = new JLabel(icon3); fr.add(icon3);
+         */
 
         j1 = new JTextField("Tools von Daniel Hauch"); j1.setEditable(false);   j1.setSize(450,30); ;   Panele.add(j1);
         j2 = new JTextField("Wie ist Ihr Name?");   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
