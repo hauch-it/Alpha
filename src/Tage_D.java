@@ -6,6 +6,7 @@ import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Random;
+import java.util.Date;
 
 public class Tage_D extends JFrame {
 
@@ -30,6 +31,7 @@ public class Tage_D extends JFrame {
     JMenu mF= null;
     JMenu mH = null;
     JMenu mI = null;
+    Date datum = null;
 
 
     public Tage_D() {
@@ -42,6 +44,9 @@ public class Tage_D extends JFrame {
         Panele = new JPanel();
 
         fr.setContentPane(Panele);
+
+        Date datum=new Date();
+        int year=datum.getYear() + 1900;
 
         bar = new JMenuBar();
         fr.setJMenuBar(bar);
@@ -100,9 +105,20 @@ public class Tage_D extends JFrame {
                 int zahl =  Integer.parseInt(j3.getText());
                 int zufall = zahl + randomInt;
 
-               String resultat = new String("Sie werden im Jahr: "+zufall+" möglicherweise sterben!");
+                if(zufall<=year){
+                    zufall = zahl + randomInt;
 
-                j4.setText(resultat);
+
+                    String resultat = new String("Sie werden in "+zufall+" Jahren möglicherweise sterben!");
+                    j4.setText(resultat);
+
+                }else{
+
+                    String resultat = new String("Sie werden in "+zufall+" Jahren möglicherweise sterben!");
+                    j4.setText(resultat);
+                }
+
+
 
             }
         });
@@ -119,9 +135,18 @@ public class Tage_D extends JFrame {
                 int zahl =  Integer.parseInt(j3.getText());
                 int zufall = zahl + randomInt;
 
-                String resultat = new String("Sie werden in "+zufall+" Jahren möglicherweise sterben!");
+                if(zufall<=year){
 
-                j4.setText(resultat);
+                    String resultat = new String("Sie werden in "+zufall+" Jahren möglicherweise sterben!");
+                    j4.setText(resultat);
+
+                }else{
+                    String resultat = new String("Test in "+zufall+" Jahren möglicherweise sterben!");
+                    j4.setText(resultat);
+
+                }
+
+
 
             }
         });
