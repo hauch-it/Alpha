@@ -21,7 +21,7 @@ public class Main {
     public Main(){
 
         fr = new JFrame("Coutinius Integration SS 2019");
-        fr.setSize(400,400);
+        fr.setSize(1920,1080);
         fr.setFont(new Font("Helvetica", Font.PLAIN, 12));
         fr.setLayout(new FlowLayout());
 
@@ -41,6 +41,18 @@ public class Main {
         menuItem1  = new JMenuItem("Exit");    mF.add(menuItem1);
         menuItem2  = new JMenuItem("Über");    mI.add(menuItem2);
 
+        menuItem1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                try {
+                    System.exit(-1);
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler");
+                }
+
+            }
+        });
+
         menuItem2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
@@ -58,8 +70,6 @@ public class Main {
                 System.exit(-1);
             }
         });
-
-        fr.setContentPane(Panele);
 
 
 
