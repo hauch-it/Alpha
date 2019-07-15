@@ -3,6 +3,13 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+/**
+ *
+ * @author Komlovski Eugen
+ * @version 1.01
+ * @see /hauch-it/Alpha
+ *
+ * */
 public class Quiz_Spiel extends JFrame {
     JLabel label_1;
     JTextArea textarea_1;
@@ -13,6 +20,8 @@ public class Quiz_Spiel extends JFrame {
     JLabel label_5;
     JLabel label_6;
     JLabel label_7;
+    JLabel label_8;
+    JLabel label_9;
     JTextArea textarea_2;
     JScrollPane sp_textarea_2;
     JTextArea textarea_3;
@@ -23,8 +32,6 @@ public class Quiz_Spiel extends JFrame {
     JScrollPane sp_textarea_5;
     JTextArea textarea_6;
     JScrollPane sp_textarea_6;
-    JLabel label_8;
-    JLabel label_9;
     JTextField textfield_4;
     JButton button_1;
     JTextField textfield_5;
