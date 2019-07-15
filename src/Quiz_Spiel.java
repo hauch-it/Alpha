@@ -143,7 +143,7 @@ public class Quiz_Spiel extends JFrame {
         getContentPane().add(button_5);
         button_5.addActionListener(new CloseListener4());
 
-        textfield_10 = new JTextField("textfield_10");
+        textfield_10 = new JTextField("0 Euro");
         getContentPane().add(textfield_10);
 
         label_13 = new JLabel("Gewinn:");
@@ -168,12 +168,20 @@ public class Quiz_Spiel extends JFrame {
     }
 
     class CloseListener2 implements ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent a) {
+    /**  Methode prüft Eingabe und führt Info raus.
+     *
+     *
+     * @param a  Objekt von ActionEvent
+     *
+     *
+     */
+    @Override
+    public void actionPerformed(ActionEvent a) {
 
             if(textfield_4.getText().startsWith("C")  || textfield_4.getText().startsWith("c") ) {
                 System.out.println("ja");
                 textfield_4.setText("Richtig !  Gewinn 2000 Euro");
+                textfield_10.setText("2000 Euro");
                 JOptionPane.showMessageDialog(null,
                     "Herzlichen Glückwunsch , Sie sind nicht so dumm, wie ich dachte !",
                     "Eine Nachricht",
@@ -198,6 +206,7 @@ public class Quiz_Spiel extends JFrame {
             if(textfield_9.getText().startsWith("C")  || textfield_9.getText().startsWith("c") ) {
                 System.out.println("ja");
                 textfield_9.setText("Richtig !  Gewinn 2000 Euro");
+                textfield_10.setText("10000 Euro");
                 JOptionPane.showMessageDialog(null,
                     "Herzlichen Glückwunsch, Sie haben 10000 Euro gewonnen!",
                     "Eine Nachricht",
@@ -222,6 +231,7 @@ public class Quiz_Spiel extends JFrame {
             if(textfield_8.getText().startsWith("A")  || textfield_8.getText().startsWith("a") ) {
                 System.out.println("ja");
                 textfield_8.setText("Richtig !  Gewinn 2000 Euro");
+                textfield_10.setText("8000 Euro");
                 JOptionPane.showMessageDialog(null,
                     "Gut gemacht, Egal wie leer du bist - es gibt Menschen die sind Lehrer!",
                     "Eine Nachricht",
@@ -246,6 +256,7 @@ public class Quiz_Spiel extends JFrame {
             if(textfield_7.getText().startsWith("C")  || textfield_7.getText().startsWith("c") ) {
                 System.out.println("ja");
                 textfield_7.setText("Richtig !  Gewinn 2000 Euro");
+                textfield_10.setText("6000 Euro");
                 JOptionPane.showMessageDialog(null,
                     "HA, gut geraten! Wo ist der beste Ort um eine Leiche zu verstecken? Seite 2 auf Google ",
                     "Eine Nachricht",
@@ -271,6 +282,7 @@ public class Quiz_Spiel extends JFrame {
             if(textfield_5.getText().startsWith("B")  || textfield_5.getText().startsWith("b") ) {
                 System.out.println("ja");
                 textfield_5.setText("Richtig !  Gewinn 2000 Euro");
+                textfield_10.setText("4000 Euro");
                 JOptionPane.showMessageDialog(null,
                     "Wie viele Windows-Anwender braucht man, um eine Glühbirne zu wechseln? – 100. Einer schraubt und 99 klicken die Fehlermeldungen weg.",
                     "Eine Nachricht",
