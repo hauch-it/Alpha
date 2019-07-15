@@ -1,18 +1,20 @@
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class Tage_DTest {
 
-  @Test
-  void main() {
-
-    try{
-      Tage_D window = new Tage_D();
-    }catch(Exception e){
-        System.out.println(e.toString());
+    @BeforeEach
+    void setUp() {
     }
 
+    @AfterEach
+    void tearDown() {
+    }
 
-  }
+    @Test
+    void gibZufall() {
+    }
 }

@@ -12,6 +12,7 @@ public class Main {
 
     JMenuItem menuItem1 = null;
     JMenuItem menuItem2 = null;
+    JMenuItem menuItem3 = null;
     JMenuBar bar =null;
     JMenu mF= null;
     JMenu mH = null;
@@ -38,10 +39,30 @@ public class Main {
         bar.add(mH);
         bar.add(mI);
 
-        menuItem1  = new JMenuItem("Exit");    mF.add(menuItem1);
-        menuItem2  = new JMenuItem("Über");    mI.add(menuItem2);
+        menuItem1  = new JMenuItem("Hauptprogramm");    mF.add(menuItem1);
+        menuItem2  = new JMenuItem("Exit");    mF.add(menuItem2);
+        menuItem3  = new JMenuItem("Über");    mI.add(menuItem3);
+
 
         menuItem1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                try {
+                    JOptionPane.showMessageDialog(fr, "Wir wechseln zum Hauptprogramm");
+
+                    Main mn = new Main();
+                    fr.setVisible((false));
+                    Panele.setVisible(false);
+                    mn.fr.setVisible(true);
+                    //System.exit(0);
+
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler");
+                }
+            }
+        });
+
+        menuItem2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
                     System.exit(-1);
@@ -49,11 +70,10 @@ public class Main {
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler");
                 }
-
             }
         });
 
-        menuItem2.addActionListener(new ActionListener() {
+        menuItem3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
                     JOptionPane.showMessageDialog(fr, "Tools entwickelt für CI 2019 Copyright by DEM Consulting");
@@ -61,7 +81,6 @@ public class Main {
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler");
                 }
-
             }
         });
 
@@ -71,10 +90,7 @@ public class Main {
             }
         });
 
-
-
         Panele.add(new JLabel("CI Tools von "));
-
         ButtonGroup buttonGroup = new ButtonGroup();
 
         JButton DTools = new JButton("Daniel");    DTools.setBounds(100, 100, 100, 40);
@@ -94,11 +110,9 @@ public class Main {
                     fr.setVisible(false);
                     Tage_D gb = new Tage_D();
 
-
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Daniels Tools");
                 }
-
             }
         });
 
@@ -108,18 +122,14 @@ public class Main {
 
                     JOptionPane.showMessageDialog(fr, "Aufruf von Eugens Tools");
                     //fr.setVisible(false);
-
                     Quiz_Spiel window = new Quiz_Spiel();
-
                     window.setTitle("Quiz_Spiel");
                     window.pack();
                     window.show();
 
-
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Eugens Tools");
                 }
-
             }
         });
 
@@ -135,13 +145,11 @@ public class Main {
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Michaels Tools");
                 }
-
             }
         });
 
         Panele.setVisible(true);
         this.fr.setVisible(true);
-        this.fr.setAlwaysOnTop(true);
         this.fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
@@ -149,5 +157,4 @@ public class Main {
         Main mn = new Main();
 
     }
-
 }

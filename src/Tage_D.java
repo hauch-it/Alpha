@@ -15,20 +15,17 @@ public class Tage_D extends JFrame {
 
     JFrame fr = null;
     JPanel Panele = null;
-    JButton button1 = null;
     JTextField j1 = null;
     JTextField j2 = null;
     JTextField j3 = null;
     JTextField j4 = null;
-    JTextField j5 = null;
-    JTextField j6 = null;
     JMenuItem menuItem1 = null;
     JMenuItem menuItem2 = null;
+    JMenuItem menuItem3 = null;
     JMenuBar bar =null;
     JMenu mF= null;
     JMenu mH = null;
     JMenu mI = null;
-    Date datum = null;
 
     public Tage_D() {
 
@@ -38,9 +35,7 @@ public class Tage_D extends JFrame {
         fr.setLayout(new FlowLayout());
 
         Panele = new JPanel();
-
         fr.setContentPane(Panele);
-
 
         bar = new JMenuBar();
         fr.setJMenuBar(bar);
@@ -51,10 +46,27 @@ public class Tage_D extends JFrame {
         bar.add(mH);
         bar.add(mI);
 
-        menuItem1  = new JMenuItem("Exit");    mF.add(menuItem1);
-        menuItem2  = new JMenuItem("Über");    mI.add(menuItem2);
+        menuItem1  = new JMenuItem("Hauptprogramm");    mF.add(menuItem1);
+        menuItem2  = new JMenuItem("Exit");    mF.add(menuItem2);
+        menuItem3  = new JMenuItem("Über");    mI.add(menuItem3);
 
         menuItem1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                try {
+                    JOptionPane.showMessageDialog(fr, "Wir wechseln zum Hauptprogramm");
+                    Main mn = new Main();
+                    fr.setVisible((false));
+                    Panele.setVisible(false);
+                    mn.fr.setVisible(true);
+                    //System.exit(0);
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler");
+                }
+            }
+        });
+
+        menuItem2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
                     System.exit(-1);
@@ -62,11 +74,10 @@ public class Tage_D extends JFrame {
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler");
                 }
-
             }
         });
 
-        menuItem2.addActionListener(new ActionListener() {
+        menuItem3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
                     JOptionPane.showMessageDialog(fr, "Tools entwickelt für CI 2019 Copyright by DEM Consulting");
@@ -74,7 +85,6 @@ public class Tage_D extends JFrame {
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler");
                 }
-
             }
         });
 
@@ -84,21 +94,12 @@ public class Tage_D extends JFrame {
             }
         });
 
-
-
         Date datum=new Date();
+
         int year=datum.getYear() + 1900;
-
-        /*
-        icon1 = new ImageIcon(getClass().getResource("bild1.jpg")); bild1 = new JLabel(icon1); fr.add(icon1);
-        icon2 = new ImageIcon(getClass().getResource("bild2.jpg")); bild2 = new JLabel(icon2); fr.add(icon2);
-        icon3 = new ImageIcon(getClass().getResource("bild3.gif")); bild3 = new JLabel(icon3); fr.add(icon3);
-         */
-
-        j1 = new JTextField("Tools von Daniel Hauch"); j1.setEditable(false);   j1.setSize(450,30); ;   bar.add(j1);
-        j2 = new JTextField("Geben Sie hier jeweils nach Auswahl: Geburtsjahr, Hohchzeitsjahr, aktuelles Jahr ein! Bsp. 1969");   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
-        j3 = new JTextField("1969");   j3.setEditable(true); Panele.add(j2); j3.setSize(450,30);   Panele.add(j3);
-
+        j1 = new JTextField("Tools von Daniel Hauch",10); j1.setEditable(false);   j1.setSize(450,30); ;   bar.add(j1);
+        j2 = new JTextField("Geben Sie hier jeweils nach Auswahl: Geburtsjahr, Hohchzeitsjahr, aktuelles Jahr ein! Bsp. 1969",50);   j2.setEditable(false); Panele.add(j2); j2.setSize(450,30);   Panele.add(j2);
+        j3 = new JTextField("1969",10);   j3.setEditable(true); Panele.add(j2); j3.setSize(450,30);   Panele.add(j3);
 
         ButtonGroup buttonGroup = new ButtonGroup();
         JButton szeit= new JButton("Sterbezeitpunkt Erfahren");
@@ -109,9 +110,7 @@ public class Tage_D extends JFrame {
             public void actionPerformed(ActionEvent ie) {
 
                 int ergebnis, zufall, zahl, i;
-
                 zahl =  Integer.parseInt(j3.getText());
-
                 zufall= gibZufall(zahl);
 
                 while(zufall<=year){
@@ -121,7 +120,6 @@ public class Tage_D extends JFrame {
                 }
                     String resultat = new String("Sie werden im Jahre "+zufall+" möglicherweise sterben!");
                     j4.setText(resultat);
-
             }
         });
 
@@ -134,25 +132,18 @@ public class Tage_D extends JFrame {
             public void actionPerformed(ActionEvent ie) {
 
                 int diamant, gold, silber, zufall, zahl, i;
-
                 zahl =  Integer.parseInt(j3.getText());
-
                 diamant=zahl+60;
                 gold=zahl+50;
                 silber=zahl+25;
-
                 String resultat = new String("Sie werden im Jahr "+silber+" Ihre Silberhochzeit, im Jahr "+gold+" Ihre Goldene Hochzeit und im Jahr "+diamant+" Diamanten Hochzeit feiern.");
                 j4.setText(resultat);
-
             }
         });
 
-        j4 = new JTextField("Hier erfahren Sie Ergebnisse aus Ihrer Auswahl"); Panele.add(j4);
-
+        j4 = new JTextField("Hier erfahren Sie Ergebnisse aus Ihrer Auswahl",8 0); Panele.add(j4);
         fr.setVisible(true);
-        fr.setAlwaysOnTop(true);
         fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
     }
 
     //Methode gibt eine ganze Zahl (int) zurück
