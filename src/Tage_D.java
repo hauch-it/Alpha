@@ -141,7 +141,7 @@ public class Tage_D extends JFrame {
             }
         });
 
-        j4 = new JTextField("Hier erfahren Sie Ergebnisse aus Ihrer Auswahl",8 0); Panele.add(j4);
+        j4 = new JTextField("Hier erfahren Sie Ergebnisse aus Ihrer Auswahl",80); Panele.add(j4);
         fr.setVisible(true);
         fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
