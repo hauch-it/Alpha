@@ -129,7 +129,7 @@ public class Main {
 
                     JOptionPane.showMessageDialog(fr, "Aufruf von Michaels Tools");
                     fr.setVisible(false);
-                    Quiz qwqqq = new Quiz();
+                    //Quiz qwqqq = new Quiz();
 
 
                 }catch (Exception ex) {
