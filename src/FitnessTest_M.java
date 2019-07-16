@@ -10,6 +10,7 @@ import java.awt.event.KeyEvent;
 public class FitnessTest_M extends JFrame {
     JFrame frame = null;
     JMenuItem menuItem_1 = null;
+    JMenuItem menuItem_2 = null;
     JMenuBar menuBar = null;
     JMenu menu = null;
     JLabel height_label = null;
@@ -50,7 +51,25 @@ public class FitnessTest_M extends JFrame {
         frame.setJMenuBar(menuBar);
         menu = new JMenu("Option");
         menuItem_1 = new JMenuItem("Exit");
+        menuItem_2 = new JMenuItem("Hauptprogramm");
         menuBar.add(menu);
+        menu.add(menuItem_2);
+
+        menuItem_2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ie) {
+                try {
+                    JOptionPane.showMessageDialog(frame, "Wir wechseln zum Hauptprogramm");
+                    Main mn = new Main();
+                    frame.setVisible((false));
+                    mn.fr.setVisible(true);
+                    //System.exit(0);
+
+                }catch (Exception ex) {
+                    JOptionPane.showMessageDialog(null, "Fehler");
+                }
+            }
+        });
+
         menu.add(menuItem_1);
 
         menuItem_1.addActionListener(new ActionListener() {
