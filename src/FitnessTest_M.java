@@ -302,7 +302,7 @@ public class FitnessTest_M extends JFrame {
                 }
             }
         });
-
+ //Fertig
         frame.add(totalscore_submit);
 
         frame.setVisible(true);
