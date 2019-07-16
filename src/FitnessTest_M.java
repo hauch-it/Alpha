@@ -1,5 +1,6 @@
 import javax.swing.*;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,17 +21,22 @@ public class FitnessTest_M extends JFrame {
     JTextField weight_tf = null;
     JLabel height_ungueltig = null;
     JLabel weight_ungueltig = null;
+    JButton bmi_rechnen = null;
 
     public FitnessTest_M() {
         frame = new JFrame("Fitness Test");
+        frame.setLayout(null);
         frame.setSize(1920, 1080);
 
-        panel_1 = new JPanel();
-        frame.setContentPane(panel_1);
+        //  panel_1 = new JPanel(new BorderLayout());
+        //  frame.setContentPane(panel_1);
 
+        menuBar = new JMenuBar();
+        frame.setJMenuBar(menuBar);
         menu = new JMenu("Option");
         menuItem_1 = new JMenuItem("Exit");
-        panel_1.add(menuItem_1);
+        menuBar.add(menu);
+        menu.add(menuItem_1);
 
         menuItem_1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent a) {
@@ -40,20 +46,17 @@ public class FitnessTest_M extends JFrame {
             }
         });
 
-        menu.add(menuItem_1);
 
-        menuBar = new JMenuBar();
-        menuBar.add(menu);
-
-        frame.setJMenuBar(menuBar);
 
         height_ungueltig = new JLabel();
         height_ungueltig.setForeground(Color.red);
-        panel_1.add(height_ungueltig);
+
 
         height_label = new JLabel("Geben sie hier ihre Koerpergroesse ein (in Meter)");
-        panel_1.add(height_label);
+        height_label.setBounds(10, 10, 280, 30);
+        //panel_1.add(height_label);
         height_tf = new JTextField(40);
+        height_tf.setBounds(10, 40, 280, 30);
         height_tf.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -62,18 +65,21 @@ public class FitnessTest_M extends JFrame {
                     height_ungueltig.setText("");
                 } catch (NumberFormatException e1) {
                     height_ungueltig.setText("Ungueltige Nummer");
+                    height_ungueltig.setBounds(10, 70, 280, 20);
                 }
             }
         });
-        panel_1.add(height_tf);
+        //  panel_1.add(height_tf);
 
         weight_ungueltig = new JLabel();
         weight_ungueltig.setForeground(Color.red);
-        panel_1.add(weight_ungueltig);
+
 
         weight_label = new JLabel("Geben sie hier ihr Gewicht ein (in Kilogramm)");
-        panel_1.add(weight_label);
+        weight_label.setBounds(320, 10, 300, 30);
+        //  panel_1.add(weight_label);
         weight_tf = new JTextField(40);
+        weight_tf.setBounds(320, 40, 300, 30);
         weight_tf.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent w) {
@@ -82,10 +88,34 @@ public class FitnessTest_M extends JFrame {
                     weight_ungueltig.setText("");
                 } catch (NumberFormatException w1) {
                     weight_ungueltig.setText("Ungueltige Nummer");
+                    weight_ungueltig.setBounds(320, 70, 300, 20);
                 }
             }
         });
-        panel_1.add(weight_tf);
+        // panel_1.add(weight_tf);
+
+        frame.add(height_label);
+        frame.add(height_tf);
+        frame.add(height_ungueltig);
+        frame.add(weight_label);
+        frame.add(weight_tf);
+        frame.add(weight_ungueltig);
+
+        bmi_rechnen = new JButton("BMI berechnen");
+        bmi_rechnen.setBounds(200, 90, 200, 30);
+        bmi_rechnen.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent b) {
+                if(b.getSource() == bmi_rechnen) {
+                    float height = Float.parseFloat(height_tf.getText());
+                    float weight = Float.parseFloat(weight_tf.getText());
+                    int bmi = (int) (weight / (height*height));
+                    System.out.println(bmi);
+                }
+            }
+        });
+
+        frame.add(bmi_rechnen);
+
 
         frame.setVisible(true);
     }

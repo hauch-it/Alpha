@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db773f9a-00fd-4a2d-a6a9-bbfafdd60b01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FitnessTest_M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FitnessTest_M.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="309">
+              <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1631#2028#0" expanded="true" />
@@ -409,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563257833088</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Der zweite commit, in welche ich eine Ungültigkeitsabfrage in meiner Fitnesstest Klasse eingebaut habe&#10;welche prüft, ob in den Textfields eine Zahl, mit oder ohne Nachkommastellen, eingegeben wurde.">
+      <created>1563260530766</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1563260530766</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -417,7 +423,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.254251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,7 +510,8 @@
     <MESSAGE value="Tage_D Generator angepasst mit Zeitpunkt Änderung größer dieses Jahres" />
     <MESSAGE value="Main und Tage_D erweitert um neue Menübutton und Funktionen optimiert auf Darstellung. Nun werden Zeilen auch direkt neben einander gezeigt." />
     <MESSAGE value="Der erste commit für meine FitnessTest Klasse. Hier wurde nur ein Grundgerüst für dessen GUI erstellt. Noch sind keine&#10;richtige Funktionen enthalten." />
-    <option name="LAST_COMMIT_MESSAGE" value="Der erste commit für meine FitnessTest Klasse. Hier wurde nur ein Grundgerüst für dessen GUI erstellt. Noch sind keine&#10;richtige Funktionen enthalten." />
+    <MESSAGE value="Der zweite commit, in welche ich eine Ungültigkeitsabfrage in meiner Fitnesstest Klasse eingebaut habe&#10;welche prüft, ob in den Textfields eine Zahl, mit oder ohne Nachkommastellen, eingegeben wurde." />
+    <option name="LAST_COMMIT_MESSAGE" value="Der zweite commit, in welche ich eine Ungültigkeitsabfrage in meiner Fitnesstest Klasse eingebaut habe&#10;welche prüft, ob in den Textfields eine Zahl, mit oder ohne Nachkommastellen, eingegeben wurde." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Alpha_GOGS$Main.ic" NAME="Main Coverage Results" MODIFIED="1563229577210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -593,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="309">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1631#2028#0" expanded="true" />
