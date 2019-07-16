@@ -296,7 +296,7 @@ public class FitnessTest_M extends JFrame {
                 if(e.getSource() == totalscore_submit) {
                     float sum = (points1+points2+points3+points4+points5)/5;
                     JOptionPane.showMessageDialog(null,
-                            "Ihre Gesammtfitnesspunktzahl betraegt:\n" + sum,
+                            "Ihre Gesammtfitnesspunktzahl betraegt:\n" + sum + "\n (Skala von 1-10)",
                             "Testergebnis",
                             JOptionPane.WARNING_MESSAGE);
                 }
