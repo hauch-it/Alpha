@@ -22,6 +22,10 @@ public class FitnessTest_M extends JFrame {
     JLabel height_ungueltig = null;
     JLabel weight_ungueltig = null;
     JButton bmi_rechnen = null;
+    JLabel question_label1 = null;
+    JLabel question_label2 = null;
+    JLabel question_label3 = null;
+    JLabel question_label4 = null;
 
     public FitnessTest_M() {
         frame = new JFrame("Fitness Test");
@@ -94,12 +98,26 @@ public class FitnessTest_M extends JFrame {
         });
         // panel_1.add(weight_tf);
 
+        question_label1 = new JLabel("Trainieren sie: \n A: Regelmässig B: Ab und zu C: Gar nicht");
+        question_label1.setBounds(660, 10, 500, 60);
+        question_label2 = new JLabel("Essen sie: \n A: 1-2 mal am Tag B: 3-4 mal am Tag C: 5+ mal am Tag");
+        question_label2.setBounds(1170, 10, 500, 60);
+        question_label3 = new JLabel("Rauchen sie?: \n A: Sehr oft B: Ab und zu C: Nie");
+        question_label3.setBounds(510, 120, 500, 60);
+        question_label4 = new JLabel("Trinken sie regelmässig Alkohol?: \n A: Sehr oft B: Ab und zu C: Nie");
+        question_label4.setBounds(10, 120, 500, 60);
+
+
         frame.add(height_label);
         frame.add(height_tf);
         frame.add(height_ungueltig);
         frame.add(weight_label);
         frame.add(weight_tf);
         frame.add(weight_ungueltig);
+        frame.add(question_label1);
+        frame.add(question_label2);
+        frame.add(question_label3);
+        frame.add(question_label4);
 
         bmi_rechnen = new JButton("BMI berechnen");
         bmi_rechnen.setBounds(200, 90, 200, 30);

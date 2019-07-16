@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db773f9a-00fd-4a2d-a6a9-bbfafdd60b01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FitnessTest_M_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FitnessTest_M_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FitnessTest_M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FitnessTest_M.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="110" column="59" lean-forward="true" selection-start-line="110" selection-start-column="59" selection-end-line="110" selection-end-column="59" />
+            <state relative-caret-position="423">
+              <caret line="116" column="35" lean-forward="true" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5244#5245#0" expanded="true" />
@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitnessTest_M_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#142#143#0" expanded="true" />
@@ -108,8 +108,8 @@
         <option value="$PROJECT_DIR$/src/Tage_DTest.java" />
         <option value="$PROJECT_DIR$/src/Tage_D.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/FitnessTest_M.java" />
         <option value="$PROJECT_DIR$/src/FitnessTest_M_Test.java" />
+        <option value="$PROJECT_DIR$/src/FitnessTest_M.java" />
       </list>
     </option>
   </component>
@@ -120,9 +120,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="792" />
-    <option name="width" value="816" />
-    <option name="height" value="879" />
+    <option name="x" value="528" />
+    <option name="width" value="544" />
+    <option name="height" value="586" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -192,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FitnessTest_M_Test">
+  <component name="RunManager" selected="Application.FitnessTest_M">
     <configuration name="FitnessTest_M" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FitnessTest_M" />
       <module name="Alpha" />
@@ -241,8 +241,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FitnessTest_M_Test" />
         <item itemvalue="Application.FitnessTest_M" />
+        <item itemvalue="JUnit.FitnessTest_M_Test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Quiz_Spiel" />
         <item itemvalue="Application.Tage_D" />
@@ -470,11 +470,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563275764003</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Der siebte Commit. Weitere Testfälle.">
+      <created>1563276255706</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1563276255706</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="FitnessTest_M_Test - 2019.07.16 at 13h 10m 28s.xml">
+      <configuration name="FitnessTest_M_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FitnessTest_M_Test - 2019.07.16 at 13h 20m 30s.xml">
+      <configuration name="FitnessTest_M_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FitnessTest_M_Test - 2019.07.16 at 13h 23m 35s.xml">
       <configuration name="FitnessTest_M_Test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -482,9 +495,9 @@
     <option name="totallyTimeSpent" value="46018000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26234818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -494,7 +507,7 @@
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49635628" weight="0.3268206" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4979757" visible="true" weight="0.28596804" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49840087" visible="true" weight="0.1744312" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997344" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -503,7 +516,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3268206" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3290461" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5020243" side_tool="true" visible="true" weight="0.28596804" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.1744312" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -575,7 +588,8 @@
     <MESSAGE value="Der vierte commit. Der BMI Wert wird nun durch ein PopUp Fenster&#10;angezeigt und nicht mehr durch die Konsole." />
     <MESSAGE value="Der fünfte Commit. Es gibt nun unterschiedliche PopUp Fenster, die von dem Wert des BMI's abhängen." />
     <MESSAGE value="Der sechste Commit. Der Bmi wird jetzt per Funktion berechnet, damit&#10;diese auch für Testzwecke verwendet werden kann. auch wurde eine&#10;Testklasse erstellt mit einem Testfall." />
-    <option name="LAST_COMMIT_MESSAGE" value="Der sechste Commit. Der Bmi wird jetzt per Funktion berechnet, damit&#10;diese auch für Testzwecke verwendet werden kann. auch wurde eine&#10;Testklasse erstellt mit einem Testfall." />
+    <MESSAGE value="Der siebte Commit. Weitere Testfälle." />
+    <option name="LAST_COMMIT_MESSAGE" value="Der siebte Commit. Weitere Testfälle." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Alpha_GOGS$Main.ic" NAME="Main Coverage Results" MODIFIED="1563229577210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -666,28 +680,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/FitnessTest_M_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="110" column="59" lean-forward="true" selection-start-line="110" selection-start-column="59" selection-end-line="110" selection-end-column="59" />
+        <state relative-caret-position="423">
+          <caret line="116" column="35" lean-forward="true" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5244#5245#0" expanded="true" />
             <element signature="e#5297#5298#0" expanded="true" />
             <element signature="e#5356#5357#0" expanded="true" />
             <element signature="e#5411#5412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FitnessTest_M_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
           </folding>
         </state>
       </provider>
