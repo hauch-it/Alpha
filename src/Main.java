@@ -139,7 +139,7 @@ public class Main {
 
                     JOptionPane.showMessageDialog(fr, "Aufruf von Michaels Tools");
                     fr.setVisible(false);
-                    //Quiz qwqqq = new Quiz();
+                    FitnessTest_M M = new FitnessTest_M();
 
 
                 }catch (Exception ex) {

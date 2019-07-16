@@ -1,6 +1,5 @@
 <component name="libraryTable">
-  <library name="Drools-6.2.0" type="Drools">
-    <properties version="6.2.0" />
+  <library name="Drools-6.2.0">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/drools-decisiontables-6.2.0.Final.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/drools-jsr94-6.2.0.Final.jar!/" />
