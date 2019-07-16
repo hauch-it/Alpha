@@ -109,10 +109,30 @@ public class FitnessTest_M extends JFrame {
                     float height = Float.parseFloat(height_tf.getText());
                     float weight = Float.parseFloat(weight_tf.getText());
                     int bmi = (int) (weight / (height*height));
-                    JOptionPane.showMessageDialog(null,
-                            "Ihr BMI: " + bmi,
-                            "Ergebnis",
-                            JOptionPane.WARNING_MESSAGE);
+                    if(bmi < 19) {
+                        JOptionPane.showMessageDialog(null,
+                                "Ihr BMI: " + bmi + " \nUntergewicht!",
+                                "Ergebnis",
+                                JOptionPane.WARNING_MESSAGE);
+                    }
+                    if(bmi >= 19 && bmi <= 25) {
+                        JOptionPane.showMessageDialog(null,
+                                "Ihr BMI: " + bmi + " \nNormalgewicht!",
+                                "Ergebnis",
+                                JOptionPane.WARNING_MESSAGE);
+                    }
+                    if(bmi > 26 && bmi <= 30) {
+                        JOptionPane.showMessageDialog(null,
+                                "Ihr BMI: " + bmi + " \nLeichtes Übergewicht!",
+                                "Ergebnis",
+                                JOptionPane.WARNING_MESSAGE);
+                    }
+                    if(bmi >= 31) {
+                        JOptionPane.showMessageDialog(null,
+                                "Ihr BMI: " + bmi + " \nÜbergewicht!",
+                                "Ergebnis",
+                                JOptionPane.WARNING_MESSAGE);
+                    }
                 }
             }
         });
