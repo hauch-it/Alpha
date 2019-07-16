@@ -1,6 +1,6 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+        import java.awt.*;
+        import java.awt.event.*;
 public class Main {
     //Variablen GUI
 
@@ -17,7 +17,7 @@ public class Main {
     JMenu mF= null;
     JMenu mH = null;
     JMenu mI = null;
-    
+
     //Konstruktor Gui
     public Main(){
 
@@ -43,7 +43,6 @@ public class Main {
         menuItem2  = new JMenuItem("Exit");    mF.add(menuItem2);
         menuItem3  = new JMenuItem("Über");    mI.add(menuItem3);
 
-
         menuItem1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
@@ -54,7 +53,6 @@ public class Main {
                     Panele.setVisible(false);
                     mn.fr.setVisible(true);
                     //System.exit(0);
-
 
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler");
@@ -95,7 +93,7 @@ public class Main {
 
         JButton DTools = new JButton("Daniel");    DTools.setBounds(100, 100, 100, 40);
         buttonGroup.add(DTools);    Panele.add(DTools);
-        
+
         JButton ETools = new JButton("Eugen"); ETools.setBounds(200, 200, 100, 40);
         buttonGroup.add(ETools);  Panele.add(ETools);
 
@@ -106,9 +104,9 @@ public class Main {
             public void actionPerformed(ActionEvent ie) {
                 try {
 
-                    JOptionPane.showMessageDialog(fr, "Aufruf von Daniels Tools");
+                    JOptionPane.showMessageDialog(fr, "Aufruf von Daniel Tools");
                     fr.setVisible(false);
-                    Tage_D gb = new Tage_D();
+                    Tage_D tage = new Tage_D();
 
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Daniels Tools");
@@ -136,11 +134,9 @@ public class Main {
         MTools.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ie) {
                 try {
-
                     JOptionPane.showMessageDialog(fr, "Aufruf von Michaels Tools");
                     fr.setVisible(false);
                     FitnessTest_M M = new FitnessTest_M();
-
 
                 }catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Fehler beim Aufruf von Michaels Tools");
@@ -155,6 +151,5 @@ public class Main {
 
     public static void main(String[] args) {
         Main mn = new Main();
-
     }
 }
