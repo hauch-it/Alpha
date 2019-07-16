@@ -9,9 +9,6 @@ import java.awt.event.KeyEvent;
 
 public class FitnessTest_M extends JFrame {
     JFrame frame = null;
-    JPanel panel_1 = null;
-    JButton button_1 = null;
-    JTextField field_1 = null;
     JMenuItem menuItem_1 = null;
     JMenuBar menuBar = null;
     JMenu menu = null;
@@ -30,14 +27,16 @@ public class FitnessTest_M extends JFrame {
     JTextField question_tf2 = null;
     JTextField question_tf3 = null;
     JTextField question_tf4 = null;
+    JButton bmi_confirm = null;
+    JButton question1_confirm = null;
+    JButton question2_confirm = null;
+    JButton question3_confirm = null;
+    JButton question4_confirm = null;
 
     public FitnessTest_M() {
         frame = new JFrame("Fitness Test");
         frame.setLayout(null);
         frame.setSize(1920, 1080);
-
-        //  panel_1 = new JPanel(new BorderLayout());
-        //  frame.setContentPane(panel_1);
 
         menuBar = new JMenuBar();
         frame.setJMenuBar(menuBar);
@@ -62,7 +61,6 @@ public class FitnessTest_M extends JFrame {
 
         height_label = new JLabel("Geben sie hier ihre Koerpergroesse ein (in Meter)");
         height_label.setBounds(10, 10, 280, 30);
-        //panel_1.add(height_label);
         height_tf = new JTextField(40);
         height_tf.setBounds(10, 40, 280, 30);
         height_tf.addKeyListener(new KeyAdapter() {
@@ -77,7 +75,6 @@ public class FitnessTest_M extends JFrame {
                 }
             }
         });
-        //  panel_1.add(height_tf);
 
         weight_ungueltig = new JLabel();
         weight_ungueltig.setForeground(Color.red);
@@ -85,7 +82,6 @@ public class FitnessTest_M extends JFrame {
 
         weight_label = new JLabel("Geben sie hier ihr Gewicht ein (in Kilogramm)");
         weight_label.setBounds(320, 10, 300, 30);
-        //  panel_1.add(weight_label);
         weight_tf = new JTextField(40);
         weight_tf.setBounds(320, 40, 300, 30);
         weight_tf.addKeyListener(new KeyAdapter() {
@@ -100,7 +96,6 @@ public class FitnessTest_M extends JFrame {
                 }
             }
         });
-        // panel_1.add(weight_tf);
 
         question_label1 = new JLabel("Trainieren sie: \n A: Regelmässig B: Ab und zu C: Gar nicht");
         question_label1.setBounds(660, 10, 500, 60);
@@ -120,6 +115,17 @@ public class FitnessTest_M extends JFrame {
         question_tf4 = new JTextField(10);
         question_tf4.setBounds(10, 210, 500, 30);
 
+        bmi_confirm = new JButton("BMI Bestätigen");
+        bmi_confirm.setBounds(400, 90, 150, 30);
+        question1_confirm = new JButton("Bestätigen");
+        question1_confirm.setBounds(660, 100, 150, 30);
+        question2_confirm = new JButton("Bestätigen");
+        question2_confirm.setBounds(1170, 100, 150, 30);
+        question3_confirm = new JButton("Bestätigen");
+        question3_confirm.setBounds(520, 240, 150, 30);
+        question4_confirm = new JButton("Bestätigen");
+        question4_confirm.setBounds(10, 240, 150, 30);
+
 
         frame.add(height_label);
         frame.add(height_tf);
@@ -135,9 +141,14 @@ public class FitnessTest_M extends JFrame {
         frame.add(question_tf2);
         frame.add(question_tf3);
         frame.add(question_tf4);
+        frame.add(bmi_confirm);
+        frame.add(question1_confirm);
+        frame.add(question2_confirm);
+        frame.add(question3_confirm);
+        frame.add(question4_confirm);
 
-        bmi_rechnen = new JButton("BMI berechnen");
-        bmi_rechnen.setBounds(200, 90, 200, 30);
+        bmi_rechnen = new JButton("BMI Berechnen");
+        bmi_rechnen.setBounds(100, 90, 150, 30);
         bmi_rechnen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent b) {
                 if(b.getSource() == bmi_rechnen) {
