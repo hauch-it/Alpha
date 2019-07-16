@@ -108,7 +108,7 @@ public class FitnessTest_M extends JFrame {
                 if(b.getSource() == bmi_rechnen) {
                     float height = Float.parseFloat(height_tf.getText());
                     float weight = Float.parseFloat(weight_tf.getText());
-                    int bmi = (int) (weight / (height*height));
+                    int bmi = calculateBmi(height, weight);
                     if(bmi < 19) {
                         JOptionPane.showMessageDialog(null,
                                 "Ihr BMI: " + bmi + " \nUntergewicht!",
@@ -145,6 +145,10 @@ public class FitnessTest_M extends JFrame {
 
     public static void main(String[] args) {
         FitnessTest_M M = new FitnessTest_M();
+    }
+
+    public int calculateBmi(float height, float weight) {
+        return (int) (weight / (height*height));
     }
 }
 
