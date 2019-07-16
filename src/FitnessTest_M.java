@@ -32,8 +32,13 @@ public class FitnessTest_M extends JFrame {
     JButton question2_confirm = null;
     JButton question3_confirm = null;
     JButton question4_confirm = null;
+    JButton totalscore_submit = null;
 
-    int points = 0;
+    int points1;
+    int points2;
+    int points3;
+    int points4;
+    int points5;
 
 
     public FitnessTest_M() {
@@ -126,13 +131,13 @@ public class FitnessTest_M extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (e.getSource() == question1_confirm) {
                     if(question_tf1.getText().startsWith("A") || question_tf1.getText().startsWith("a")) {
-                        points += 10;
+                        points1 = 10;
                     }
                     if(question_tf1.getText().startsWith("B") || question_tf1.getText().startsWith("b")) {
-                        points += 5;
+                        points1 = 5;
                     }
                     if(question_tf1.getText().startsWith("C") || question_tf1.getText().startsWith("c")) {
-                        points += 0;
+                        points1 = 0;
                     }
                 }
             }
@@ -144,13 +149,13 @@ public class FitnessTest_M extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (e.getSource() == question2_confirm) {
                     if(question_tf2.getText().startsWith("A") || question_tf2.getText().startsWith("a")) {
-                        points += 10;
+                        points2 = 10;
                     }
                     if(question_tf2.getText().startsWith("B") || question_tf2.getText().startsWith("b")) {
-                        points += 5;
+                        points2 = 5;
                     }
                     if(question_tf2.getText().startsWith("C") || question_tf2.getText().startsWith("c")) {
-                        points += 0;
+                        points2 = 0;
                     }
                 }
             }
@@ -162,13 +167,13 @@ public class FitnessTest_M extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (e.getSource() == question3_confirm) {
                     if(question_tf3.getText().startsWith("A") || question_tf3.getText().startsWith("a")) {
-                        points += 0;
+                        points3 = 0;
                     }
                     if(question_tf3.getText().startsWith("B") || question_tf3.getText().startsWith("b")) {
-                        points += 4;
+                        points3 = 4;
                     }
                     if(question_tf3.getText().startsWith("C") || question_tf3.getText().startsWith("c")) {
-                        points += 10;
+                        points3 = 10;
                     }
                 }
             }
@@ -180,13 +185,13 @@ public class FitnessTest_M extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 if (e.getSource() == question4_confirm) {
                     if(question_tf4.getText().startsWith("A") || question_tf4.getText().startsWith("a")) {
-                        points += 0;
+                        points4 = 0;
                     }
                     if(question_tf4.getText().startsWith("B") || question_tf4.getText().startsWith("b")) {
-                        points += 4;
+                        points4 = 4;
                     }
                     if(question_tf4.getText().startsWith("C") || question_tf4.getText().startsWith("c")) {
-                        points += 10;
+                        points4 = 10;
                     }
                 }
             }
@@ -256,26 +261,26 @@ public class FitnessTest_M extends JFrame {
                     float height = Float.parseFloat(height_tf.getText());
                     float weight = Float.parseFloat(weight_tf.getText());
                     int bmi = calculateBmi(height, weight);
-                    if(bmi <= 15) points += 0;
-                    if(bmi == 16) points += 1;
-                    if(bmi == 17) points += 2;
-                    if(bmi == 18) points += 3;
-                    if(bmi == 19) points += 6;
-                    if(bmi == 20) points += 8;
-                    if(bmi == 21) points += 9;
-                    if(bmi == 22) points += 10;
-                    if(bmi == 23) points += 10;
-                    if(bmi == 24) points += 9;
-                    if(bmi == 25) points += 8;
-                    if(bmi == 26) points += 7;
-                    if(bmi == 27) points += 6;
-                    if(bmi == 28) points += 5;
-                    if(bmi == 29) points += 4;
-                    if(bmi == 30) points += 4;
-                    if(bmi == 31) points += 3;
-                    if(bmi == 32) points += 2;
-                    if(bmi == 33) points += 1;
-                    if(bmi >= 34) points += 0;
+                    if(bmi <= 15) points5 = 0;
+                    if(bmi == 16) points5 = 1;
+                    if(bmi == 17) points5 = 2;
+                    if(bmi == 18) points5 = 3;
+                    if(bmi == 19) points5 = 6;
+                    if(bmi == 20) points5 = 8;
+                    if(bmi == 21) points5 = 9;
+                    if(bmi == 22) points5 = 10;
+                    if(bmi == 23) points5 = 10;
+                    if(bmi == 24) points5 = 9;
+                    if(bmi == 25) points5 = 8;
+                    if(bmi == 26) points5 = 7;
+                    if(bmi == 27) points5 = 6;
+                    if(bmi == 28) points5 = 5;
+                    if(bmi == 29) points5 = 4;
+                    if(bmi == 30) points5 = 4;
+                    if(bmi == 31) points5 = 3;
+                    if(bmi == 32) points5 = 2;
+                    if(bmi == 33) points5 = 1;
+                    if(bmi >= 34) points5 = 0;
                 }
             }
         });
@@ -283,6 +288,22 @@ public class FitnessTest_M extends JFrame {
 
         frame.add(bmi_rechnen);
         frame.add(bmi_confirm);
+
+        totalscore_submit = new JButton("Gesammtergebnis");
+        totalscore_submit.setBounds(1100, 200, 200, 150);
+        totalscore_submit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource() == totalscore_submit) {
+                    float sum = (points1+points2+points3+points4+points5)/5;
+                    JOptionPane.showMessageDialog(null,
+                            "Ihre Gesammtfitnesspunktzahl betraegt:\n" + sum,
+                            "Testergebnis",
+                            JOptionPane.WARNING_MESSAGE);
+                }
+            }
+        });
+
+        frame.add(totalscore_submit);
 
         frame.setVisible(true);
     }

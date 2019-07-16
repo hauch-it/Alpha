@@ -32,14 +32,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+            <state relative-caret-position="556">
+              <caret line="304" lean-forward="true" selection-start-line="304" selection-end-line="304" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5244#5245#0" expanded="true" />
-                <element signature="e#5297#5298#0" expanded="true" />
-                <element signature="e#5356#5357#0" expanded="true" />
-                <element signature="e#5411#5412#0" expanded="true" />
+                <element signature="e#2063#2525#0" expanded="true" />
+                <element signature="e#2524#2525#0" expanded="true" />
+                <element signature="e#2877#3340#0" expanded="true" />
+                <element signature="e#3339#3340#0" expanded="true" />
+                <element signature="e#11696#11697#0" expanded="true" />
+                <element signature="e#11749#11750#0" expanded="true" />
+                <element signature="e#11808#11809#0" expanded="true" />
+                <element signature="e#11863#11864#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FitnessTest_M_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="425">
               <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -491,7 +495,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563278597504</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Commit #10. Bestätigungsbuttons eingefügt.">
+      <created>1563281180742</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1563281180742</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Commit #11. Erste Berechnungsfunktionen für das Gesammtergebnis erstellt.">
+      <created>1563283451442</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1563283451442</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -606,7 +624,9 @@
     <MESSAGE value="Der siebte Commit. Weitere Testfälle." />
     <MESSAGE value="Der achte Commit. Neue Fitnessfragen sollen entworfen&#10;werden. Die Fragen (Labels) wurden erstellt und&#10;positioniert." />
     <MESSAGE value="Der neunte Commit. Textfelder zu den Fragen wurden eingefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Der neunte Commit. Textfelder zu den Fragen wurden eingefügt" />
+    <MESSAGE value="Commit #10. Bestätigungsbuttons eingefügt." />
+    <MESSAGE value="Commit #11. Erste Berechnungsfunktionen für das Gesammtergebnis erstellt." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit #11. Erste Berechnungsfunktionen für das Gesammtergebnis erstellt." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Alpha_GOGS$Main.ic" NAME="Main Coverage Results" MODIFIED="1563229577210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -699,7 +719,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitnessTest_M_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="425">
           <caret line="93" column="31" selection-start-line="93" selection-start-column="31" selection-end-line="93" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -711,14 +731,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+        <state relative-caret-position="556">
+          <caret line="304" lean-forward="true" selection-start-line="304" selection-end-line="304" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5244#5245#0" expanded="true" />
-            <element signature="e#5297#5298#0" expanded="true" />
-            <element signature="e#5356#5357#0" expanded="true" />
-            <element signature="e#5411#5412#0" expanded="true" />
+            <element signature="e#2063#2525#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2877#3340#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+            <element signature="e#11696#11697#0" expanded="true" />
+            <element signature="e#11749#11750#0" expanded="true" />
+            <element signature="e#11808#11809#0" expanded="true" />
+            <element signature="e#11863#11864#0" expanded="true" />
           </folding>
         </state>
       </provider>
