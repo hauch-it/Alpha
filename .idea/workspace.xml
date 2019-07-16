@@ -191,7 +191,7 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="9" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Alpha" />
@@ -213,6 +213,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.D_Geburtstag" />
+      <item itemvalue="Application.D_Test1" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Quiz_Spiel" />
+      <item itemvalue="Application.Tage_D" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
