@@ -33,6 +33,9 @@ public class FitnessTest_M extends JFrame {
     JButton question3_confirm = null;
     JButton question4_confirm = null;
 
+    int points = 0;
+
+
     public FitnessTest_M() {
         frame = new JFrame("Fitness Test");
         frame.setLayout(null);
@@ -115,16 +118,79 @@ public class FitnessTest_M extends JFrame {
         question_tf4 = new JTextField(10);
         question_tf4.setBounds(10, 210, 500, 30);
 
-        bmi_confirm = new JButton("BMI Bestätigen");
-        bmi_confirm.setBounds(400, 90, 150, 30);
+
+
         question1_confirm = new JButton("Bestätigen");
         question1_confirm.setBounds(660, 100, 150, 30);
+        question1_confirm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == question1_confirm) {
+                    if(question_tf1.getText().startsWith("A") || question_tf1.getText().startsWith("a")) {
+                        points += 10;
+                    }
+                    if(question_tf1.getText().startsWith("B") || question_tf1.getText().startsWith("b")) {
+                        points += 5;
+                    }
+                    if(question_tf1.getText().startsWith("C") || question_tf1.getText().startsWith("c")) {
+                        points += 0;
+                    }
+                }
+            }
+        });
+
         question2_confirm = new JButton("Bestätigen");
         question2_confirm.setBounds(1170, 100, 150, 30);
+        question2_confirm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == question2_confirm) {
+                    if(question_tf2.getText().startsWith("A") || question_tf2.getText().startsWith("a")) {
+                        points += 10;
+                    }
+                    if(question_tf2.getText().startsWith("B") || question_tf2.getText().startsWith("b")) {
+                        points += 5;
+                    }
+                    if(question_tf2.getText().startsWith("C") || question_tf2.getText().startsWith("c")) {
+                        points += 0;
+                    }
+                }
+            }
+        });
+
         question3_confirm = new JButton("Bestätigen");
         question3_confirm.setBounds(520, 240, 150, 30);
+        question3_confirm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == question3_confirm) {
+                    if(question_tf3.getText().startsWith("A") || question_tf3.getText().startsWith("a")) {
+                        points += 0;
+                    }
+                    if(question_tf3.getText().startsWith("B") || question_tf3.getText().startsWith("b")) {
+                        points += 4;
+                    }
+                    if(question_tf3.getText().startsWith("C") || question_tf3.getText().startsWith("c")) {
+                        points += 10;
+                    }
+                }
+            }
+        });
+
         question4_confirm = new JButton("Bestätigen");
         question4_confirm.setBounds(10, 240, 150, 30);
+        question4_confirm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == question4_confirm) {
+                    if(question_tf4.getText().startsWith("A") || question_tf4.getText().startsWith("a")) {
+                        points += 0;
+                    }
+                    if(question_tf4.getText().startsWith("B") || question_tf4.getText().startsWith("b")) {
+                        points += 4;
+                    }
+                    if(question_tf4.getText().startsWith("C") || question_tf4.getText().startsWith("c")) {
+                        points += 10;
+                    }
+                }
+            }
+        });
 
 
         frame.add(height_label);
@@ -141,7 +207,6 @@ public class FitnessTest_M extends JFrame {
         frame.add(question_tf2);
         frame.add(question_tf3);
         frame.add(question_tf4);
-        frame.add(bmi_confirm);
         frame.add(question1_confirm);
         frame.add(question2_confirm);
         frame.add(question3_confirm);
@@ -183,8 +248,41 @@ public class FitnessTest_M extends JFrame {
             }
         });
 
-        frame.add(bmi_rechnen);
+        bmi_confirm = new JButton("BMI Bestätigen");
+        bmi_confirm.setBounds(400, 90, 150, 30);
+        bmi_confirm.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource() == bmi_confirm) {
+                    float height = Float.parseFloat(height_tf.getText());
+                    float weight = Float.parseFloat(weight_tf.getText());
+                    int bmi = calculateBmi(height, weight);
+                    if(bmi <= 15) points += 0;
+                    if(bmi == 16) points += 1;
+                    if(bmi == 17) points += 2;
+                    if(bmi == 18) points += 3;
+                    if(bmi == 19) points += 6;
+                    if(bmi == 20) points += 8;
+                    if(bmi == 21) points += 9;
+                    if(bmi == 22) points += 10;
+                    if(bmi == 23) points += 10;
+                    if(bmi == 24) points += 9;
+                    if(bmi == 25) points += 8;
+                    if(bmi == 26) points += 7;
+                    if(bmi == 27) points += 6;
+                    if(bmi == 28) points += 5;
+                    if(bmi == 29) points += 4;
+                    if(bmi == 30) points += 4;
+                    if(bmi == 31) points += 3;
+                    if(bmi == 32) points += 2;
+                    if(bmi == 33) points += 1;
+                    if(bmi >= 34) points += 0;
+                }
+            }
+        });
 
+
+        frame.add(bmi_rechnen);
+        frame.add(bmi_confirm);
 
         frame.setVisible(true);
     }
