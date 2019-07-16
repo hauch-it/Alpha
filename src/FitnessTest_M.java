@@ -109,7 +109,10 @@ public class FitnessTest_M extends JFrame {
                     float height = Float.parseFloat(height_tf.getText());
                     float weight = Float.parseFloat(weight_tf.getText());
                     int bmi = (int) (weight / (height*height));
-                    System.out.println(bmi);
+                    JOptionPane.showMessageDialog(null,
+                            "Ihr BMI: " + bmi,
+                            "Ergebnis",
+                            JOptionPane.WARNING_MESSAGE);
                 }
             }
         });
