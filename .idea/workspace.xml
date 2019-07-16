@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="116" column="35" lean-forward="true" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+            <state relative-caret-position="351">
+              <caret line="118" column="33" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5244#5245#0" expanded="true" />
@@ -477,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563276255706</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Der achte Commit. Neue Fitnessfragen sollen entworfen&#10;werden. Die Fragen (Labels) wurden erstellt und&#10;positioniert.">
+      <created>1563277634769</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1563277634769</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -497,7 +504,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -507,7 +514,7 @@
       <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49635628" weight="0.3268206" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49840087" visible="true" weight="0.1744312" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49840087" visible="true" weight="0.1744312" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997344" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -589,7 +596,8 @@
     <MESSAGE value="Der fünfte Commit. Es gibt nun unterschiedliche PopUp Fenster, die von dem Wert des BMI's abhängen." />
     <MESSAGE value="Der sechste Commit. Der Bmi wird jetzt per Funktion berechnet, damit&#10;diese auch für Testzwecke verwendet werden kann. auch wurde eine&#10;Testklasse erstellt mit einem Testfall." />
     <MESSAGE value="Der siebte Commit. Weitere Testfälle." />
-    <option name="LAST_COMMIT_MESSAGE" value="Der siebte Commit. Weitere Testfälle." />
+    <MESSAGE value="Der achte Commit. Neue Fitnessfragen sollen entworfen&#10;werden. Die Fragen (Labels) wurden erstellt und&#10;positioniert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Der achte Commit. Neue Fitnessfragen sollen entworfen&#10;werden. Die Fragen (Labels) wurden erstellt und&#10;positioniert." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Alpha_GOGS$Main.ic" NAME="Main Coverage Results" MODIFIED="1563229577210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -694,8 +702,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FitnessTest_M.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="116" column="35" lean-forward="true" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+        <state relative-caret-position="351">
+          <caret line="118" column="33" selection-start-line="118" selection-start-column="33" selection-end-line="118" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5244#5245#0" expanded="true" />
